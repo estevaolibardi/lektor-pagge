@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import Logo from '../../assets/vector.png';
 import { FaBars } from 'react-icons/fa';
 import BurguerMenu from '../BurguerMenu/index';
+import Link from 'next/link';
 import { Container, Nav, NavbarContainer, Aside, LeftBox } from './styles';
 
 interface TesteProps {
@@ -24,21 +25,16 @@ export function Header({ handleOpenNav, open }: TesteProps) {
           <Aside open={open}>
             <div>
               <ul>
-                <li>Sobre</li>
+                <li>
+                  <Link href="/about">Sobre</Link>
+                </li>
+
                 <li>Contato</li>
               </ul>
             </div>
           </Aside>
         </NavbarContainer>
       </Nav>
-      <section>
-        <h2>Sistema de monitoramento inteligente.</h2>
-        <h2>
-          <span>Antecipe o futuro.</span>
-        </h2>
-        <p>E se você soubesse quando suas máquinas vão falhar?</p>
-        <button>Saiba mais</button>
-      </section>
     </Container>
   );
 }
