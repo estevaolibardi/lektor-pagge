@@ -35,6 +35,14 @@ export function Header({ handleOpenNav, open }: TesteProps) {
           </Aside>
         </NavbarContainer>
       </Nav>
+      <section>
+        <h1>Sistema de Monitoramento Inteligente.</h1>
+        <h2>
+          <span>Antecipe o futuro.</span>
+        </h2>
+        <p>E se você soubesse quando suas máquinas vão falhar?</p>
+        <button>Saiba mais</button>
+      </section>
     </Container>
   );
 }
