@@ -142,7 +142,6 @@ export const Aside = styled.div<ContainerProps>`
   right: 0px;
   width: 100%;
   max-width: 27.3rem;
-  min-height: 100vh;
   background-color: #064067;
   z-index: 100;
   opacity: 1;
@@ -155,7 +154,6 @@ export const Aside = styled.div<ContainerProps>`
 
   > div {
     display: flex;
-    height: 100vh;
     padding: 5rem 2rem 3rem;
     font-size: 1.6rem;
     align-items: flex-start;
@@ -166,6 +164,7 @@ export const Aside = styled.div<ContainerProps>`
     color: rgb(239 240 232);
 
     ul {
+      min-height: 100vh;
       li {
         padding-bottom: 0.75rem;
       }
