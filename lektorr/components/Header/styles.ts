@@ -25,6 +25,13 @@ export const Container = styled.header`
     color: #eff0e8;
     width: 100%;
 
+    h1 {
+      font-family: 'Lexend', sans-serif;
+      font-size: 2rem;
+      line-height: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
     h2 {
       font-family: 'Lexend', sans-serif;
       font-size: 2rem;
