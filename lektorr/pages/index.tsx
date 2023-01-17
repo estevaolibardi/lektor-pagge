@@ -1,7 +1,7 @@
 import { Header } from '../components/Header';
 import { useState } from 'react';
 import Page from '../components/page';
-import { Box } from '../styles/homestyle';
+import { Box, Order } from '../styles/homestyle';
 import Head from 'next/head';
 import { IoMdWifi } from 'react-icons/io';
 import { RiShieldCheckFill, RiMedalFill } from 'react-icons/ri';
@@ -40,6 +40,30 @@ export default function Home() {
           <p>Melhor custo-benefício em manutenção preditiva do mercado.</p>
         </div>
       </Box>
+      <Order>
+        <div>
+          <h1>Gestão de Ativos</h1>
+          <p>
+            Incorpore ao seu negócio o monitoramento automático e online de seus
+            ativos, e através da Tecnologia IoT e Inteligência Artificial,
+            obtenha informações relevantes para a tomada de decisão!
+          </p>
+        </div>
+        <Image
+          src="/monitoringg.png"
+          height={180}
+          width={300}
+          alt="monitoring"
+        />
+        ;
+      </Order>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#DDEFFF"
+          fill-opacity="1"
+          d="M0,256L1440,160L1440,0L0,0Z"
+        ></path>
+      </svg>
     </Page>
   );
 }

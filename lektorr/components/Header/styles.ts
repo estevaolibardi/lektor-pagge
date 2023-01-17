@@ -5,6 +5,10 @@ type ContainerProps = {
   open: boolean;
 };
 
+type ActiveProp = {
+  actived: boolean;
+};
+
 export const Container = styled.header`
   width: 100%;
   display: flex;
@@ -21,7 +25,7 @@ export const Container = styled.header`
   zoom: 0.9;
 
   section {
-    padding: 40px 35px 0 35px;
+    padding: 120px 35px 0 35px;
     color: #eff0e8;
     width: 100%;
 
@@ -71,17 +75,21 @@ export const Container = styled.header`
   }
 `;
 
-export const Nav = styled.nav`
-  background: transparent;
+export const Nav = styled.nav<ActiveProp>`
+  background: ${({ actived }) => (actived ? '#00708d' : 'transparent')};
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
+
+  .active {
+    background-color: red;
+  }
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

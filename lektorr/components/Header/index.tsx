@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import Logo from '../../assets/vector.png';
 import { FaBars } from 'react-icons/fa';
 import BurguerMenu from '../BurguerMenu/index';
@@ -12,9 +12,23 @@ interface TesteProps {
 }
 
 export function Header({ handleOpenNav, open }: TesteProps) {
+  const [active, setActive] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  };
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', changeBackground);
+  }
+
   return (
     <Container>
-      <Nav>
+      <Nav actived={active}>
         <NavbarContainer>
           <LeftBox>
             <Image src={Logo} alt="wall" />
