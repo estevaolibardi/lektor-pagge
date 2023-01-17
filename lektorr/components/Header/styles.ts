@@ -9,11 +9,11 @@ export const Container = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 540px;
+  height: 550px;
   background-image: linear-gradient(
       to bottom,
       rgba(6, 64, 103, 0.85),
-      rgba(10, 65, 102, 0.52)
+      rgba(10, 65, 102, 0.65)
     ),
     url('/wall.jpg');
   background-size: 1150px;
@@ -21,7 +21,7 @@ export const Container = styled.header`
   zoom: 0.9;
 
   section {
-    padding: 40px 24px 0 35px;
+    padding: 40px 35px 0 35px;
     color: #eff0e8;
     width: 100%;
 
@@ -29,7 +29,7 @@ export const Container = styled.header`
       font-family: 'Lexend', sans-serif;
       font-size: 2rem;
       line-height: 2.3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.2rem;
     }
 
     h2 {
@@ -37,6 +37,7 @@ export const Container = styled.header`
       font-size: 2rem;
       line-height: 2.3rem;
       margin-bottom: 0.5rem;
+      margin-top: 0;
 
       span {
         color: #6ab8ff;
@@ -44,22 +45,22 @@ export const Container = styled.header`
     }
 
     p {
-      margin-top: 2rem;
-      margin-bottom: 3.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
       font-size: 1.3rem;
       font-weight: 600;
       font-family: 'Lexend', sans-serif;
       color: #eff0e8;
+      width: 300px;
     }
 
     button {
       width: 220px;
-      border-radius: 4px;
-      font-size: 1.08rem;
+      border-radius: 5px;
+      font-size: 1.1rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       height: 45px;
       border: none;
-      font-size: 1rem;
       background-color: #228ff4;
       color: #ffff;
       font-family: 'Lexend', sans-serif;
@@ -175,6 +176,7 @@ export const Aside = styled.div<ContainerProps>`
       min-height: 100vh;
       li {
         padding-bottom: 0.75rem;
+        list-style: none;
       }
     }
   }
