@@ -11,7 +11,6 @@ export const Box = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #f3faff;
-  padding-bottom: 2rem;
 `;
 
 export const Img = styled.div`
@@ -27,15 +26,16 @@ export const Img = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 350px;
-  justify-content: center;
+  height: 600px;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     width: 300px;
     text-align: start;
     color: #06718f;
@@ -55,6 +55,7 @@ export const BoxAccordion = styled.div`
 export const Answer = styled.div<ActiveProp>`
   color: #1687a7;
   margin-bottom: 1.2rem;
+  font-size: 1.05rem;
   padding-left: 0.5rem;
   text-align: justify;
   display: flex;
@@ -75,7 +76,7 @@ export const Question = styled.div`
   gap: 20px;
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 300px;
     font-weight: 500;
     font-family: 'Lexend', sans-serif;

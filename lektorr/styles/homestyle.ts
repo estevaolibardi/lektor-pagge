@@ -93,7 +93,7 @@ export const Order = styled.div`
     div {
       h1 {
         font-size: 1.5rem;
-        font-weight: 500;
+        font-weight: 400;
       }
       p {
         font-size: 1.05rem;
