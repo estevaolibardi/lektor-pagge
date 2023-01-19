@@ -9,6 +9,7 @@ export const Box = styled.div`
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 1rem;
   align-items: center;
   background-color: #f3faff;
 `;
