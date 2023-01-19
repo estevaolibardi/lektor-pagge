@@ -17,9 +17,10 @@ export const Box = styled.div`
 export const Img = styled.div`
   width: 400px;
   height: 400px;
+  display: none;
 
-  @media screen and (min-width: 415px) {
-    display: none;
+  @media screen and (min-width: 1025px) {
+    display: flex;
   }
 `;
 
