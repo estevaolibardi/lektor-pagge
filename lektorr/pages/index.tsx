@@ -1,18 +1,27 @@
 import { Header } from '../components/Header';
 import { useState } from 'react';
 import Page from '../components/page';
-import { Box, Order } from '../styles/homestyle';
+import { Box, Order, Ola } from '../styles/homestyle';
 import Head from 'next/head';
 import { IoMdWifi } from 'react-icons/io';
 import { RiShieldCheckFill, RiMedalFill } from 'react-icons/ri';
 import Image from 'next/image';
+import Accordion from '../components/Accordion';
 
 export default function Home() {
   const [open, setOpen] = useState(false);
-  console.log(open);
+  const [selected, setSelected] = useState(0);
+  console.log(selected);
 
   const handleOpenNav = () => {
     setOpen(!open);
+  };
+
+  const toggle = (i) => {
+    if (selected === i + 1) {
+      return setSelected(null);
+    }
+    setSelected(i + 1);
   };
 
   return (
@@ -55,15 +64,17 @@ export default function Home() {
           width={300}
           alt="monitoring"
         />
-        ;
       </Order>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#DDEFFF"
-          fill-opacity="1"
-          d="M0,256L1440,160L1440,0L0,0Z"
-        ></path>
-      </svg>
+      <Accordion selected={selected} toggle={toggle} />
+      <Ola>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#f3faff"
+            fillOpacity="1"
+            d="M0,256L1440,160L1440,0L0,0Z"
+          ></path>
+        </svg>
+      </Ola>
     </Page>
   );
 }

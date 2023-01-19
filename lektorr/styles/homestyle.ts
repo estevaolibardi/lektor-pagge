@@ -7,7 +7,6 @@ export const Box = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #f3faff;
-  padding: 50px 0px;
 
   div {
     max-width: 260px;
@@ -15,13 +14,14 @@ export const Box = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
+    font-family: 'Lexend', sans-serif;
 
     h1 {
       font-size: 1.2rem;
       text-align: center;
-      width: 200px;
+      width: 250px;
       color: #06718f;
       font-weight: 500;
     }
@@ -34,14 +34,16 @@ export const Box = styled.div`
     }
   }
 
-  @media screen and (min-width: 425px) {
+  @media screen and (min-width: 415px) {
     div {
       max-width: 290px;
       h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        font-weight: 500;
       }
       p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        font-weight: 400;
       }
     }
   }
@@ -49,7 +51,9 @@ export const Box = styled.div`
 
 export const Order = styled.div`
   background-color: #ddefff;
-  height: 20rem;
+  height: 19rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -58,8 +62,7 @@ export const Order = styled.div`
 
   img {
     position: relative;
-    top: 10px;
-    z-index: 10;
+    top: 4px;
   }
 
   div {
@@ -67,11 +70,13 @@ export const Order = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 35px 0px 35px;
+    width: 320px;
+    white-space: break-spaces;
 
     h1 {
       font-size: 1.6rem;
       color: #06718f;
+      font-family: 'Lexend', sans-serif;
     }
 
     p {
@@ -79,6 +84,25 @@ export const Order = styled.div`
       color: #1687a7;
       margin-top: 0.5rem;
       line-height: 1.3rem;
+      font-size: 1.07rem;
+      font-family: 'Lexend', sans-serif;
     }
   }
+
+  @media screen and (min-width: 415px) {
+    div {
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.05rem;
+        font-weight: 400;
+      }
+    }
+  }
+`;
+
+export const Ola = styled.div`
+  height: 500px;
 `;

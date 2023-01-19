@@ -73,6 +73,10 @@ export const Container = styled.header`
       justify-content: center;
     }
   }
+
+  @media screen and (min-width: 415px) {
+    height: 520px;
+  }
 `;
 
 export const Nav = styled.nav<ActiveProp>`
