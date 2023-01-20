@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import introBackgroundImg from '../../assets/wallpaper.jpg';
 
 type ContainerProps = {
   open: boolean;
@@ -8,6 +7,8 @@ type ContainerProps = {
 type ActiveProp = {
   actived: boolean;
 };
+
+export const Ma = styled.div``;
 
 export const Container = styled.header`
   width: 100%;
@@ -22,7 +23,7 @@ export const Container = styled.header`
     url('/wall.jpg');
   background-size: 1150px;
   background-position: 53% 20%;
-  zoom: 0.9;
+  /* zoom: 0.9; */
 
   section {
     padding: 120px 35px 0 35px;

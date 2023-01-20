@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@hookform/resolvers": "^2.9.10",
     "next": "latest",
     "react": "^18.2.0",

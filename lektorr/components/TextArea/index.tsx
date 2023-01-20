@@ -8,6 +8,7 @@ type Props = {
   register: (name: string, options?: RegisterOptions) => UseFormRegisterReturn;
   name?: string;
   error?: string;
+  id?: string;
 };
 
 const TextArea = ({ placeholder, label, register, name, error }: Props) => {

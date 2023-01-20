@@ -9,6 +9,7 @@ type Props = {
   name?: string;
   error?: string;
   autoComplete?: string;
+  id?: string;
 };
 
 const Input = ({
@@ -19,6 +20,7 @@ const Input = ({
   name,
   error,
   autoComplete,
+  id,
 }: Props) => {
   return (
     <Container>

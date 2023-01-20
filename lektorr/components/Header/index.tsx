@@ -49,6 +49,7 @@ export function Header({ handleOpenNav, open }: TesteProps) {
           </Aside>
         </NavbarContainer>
       </Nav>
+
       <section>
         <h1>Sistema de Monitoramento Inteligente.</h1>
         <h2>

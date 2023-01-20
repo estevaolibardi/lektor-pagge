@@ -12,7 +12,7 @@ export const Container = styled.div`
     color: #4e8896;
     font-size: 0.9rem;
     text-indent: 10px;
-    padding-top: 5px;
+    padding-top: 10px;
 
     ::placeholder {
       color: #8fbac4;

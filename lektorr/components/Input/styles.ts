@@ -25,7 +25,7 @@ export const Container = styled.div`
 
 export const StyledInput = styled.input`
   width: 100%;
-  height: 38.5px;
+  height: 48px;
   background-color: aliceblue;
   border: 2px solid #e9eff5;
   border-radius: 3px;
