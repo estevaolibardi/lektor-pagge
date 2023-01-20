@@ -27,7 +27,7 @@ export const Img = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 350px;
-  height: 600px;
+  /* height: 620px; */
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -56,9 +56,10 @@ export const BoxAccordion = styled.div`
 export const Answer = styled.div<ActiveProp>`
   color: #1687a7;
   margin-bottom: 1.2rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   padding-left: 0.5rem;
   text-align: justify;
+  font-family: 'Lexend', sans-serif;
   display: flex;
   height: auto;
   max-height: ${({ selected }) => (selected ? '9999px' : '0')};
