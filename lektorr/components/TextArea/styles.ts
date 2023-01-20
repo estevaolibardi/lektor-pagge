@@ -35,6 +35,8 @@ export const Container = styled.div`
     margin-bottom: 5px;
     color: #00708d;
     font-weight: 500;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.1rem;
   }
 `;
 

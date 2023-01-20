@@ -17,6 +17,8 @@ export const Container = styled.div`
     margin-bottom: 5px;
     color: #00708d;
     font-weight: 500;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.1rem;
   }
 
   @media (min-width: 800px) {
@@ -25,12 +27,12 @@ export const Container = styled.div`
 
 export const StyledInput = styled.input`
   width: 100%;
-  height: 48px;
+  height: 80px;
   background-color: aliceblue;
   border: 2px solid #e9eff5;
   border-radius: 3px;
   text-indent: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border-radius: 5px;
   font-family: 'Lexend', sans-serif;
   color: #4e8896;
