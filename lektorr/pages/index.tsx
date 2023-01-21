@@ -8,6 +8,8 @@ import { RiShieldCheckFill, RiMedalFill } from 'react-icons/ri';
 import Image from 'next/image';
 import Accordion from '../components/Accordion';
 import { Contact } from '../components/Contact';
+import { TrustBy } from '../components/TrustBy';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -68,6 +70,8 @@ export default function Home() {
       </Order>
       <Accordion selected={selected} toggle={toggle} />
       <Contact />
+      <TrustBy />
+      <Footer />
     </Page>
   );
 }

@@ -92,7 +92,7 @@ export const Order = styled.div`
   @media screen and (min-width: 415px) {
     div {
       h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 400;
       }
       p {
