@@ -9,19 +9,20 @@ export const Box = styled.div`
   background-color: #f3faff;
   font-family: 'Lexend', sans-serif;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
 
   > div {
-    max-width: 350px;
+    max-width: 295px;
   }
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
 
   p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 400;
   }
 
@@ -79,8 +80,8 @@ export const First = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
-  height: 160px;
+  margin-bottom: 3rem;
+  height: 10.5rem;
 
   svg {
     width: 35px;
@@ -88,7 +89,7 @@ export const First = styled.div`
 
   h1 {
     color: #06718f;
-    width: 12rem;
+    width: 13rem;
   }
 
   p {
@@ -140,9 +141,9 @@ export const Second = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   text-align: center;
-  height: 180px;
+  height: 12rem;
 
   svg {
     width: 35px;
@@ -154,7 +155,7 @@ export const Second = styled.div`
   }
   p {
     color: #1687a7;
-    width: 265px;
+    width: 280px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -202,9 +203,8 @@ export const Third = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
   text-align: center;
-  height: 165px;
+  height: 10.5rem;
 
   svg {
     width: 35px;
@@ -212,10 +212,11 @@ export const Third = styled.div`
 
   h1 {
     color: #06718f;
-    width: 14rem;
+    width: 16rem;
   }
   p {
     color: #1687a7;
+    width: 310px;
   }
 
   @media screen and (min-width: 1024px) {

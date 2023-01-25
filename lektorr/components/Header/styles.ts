@@ -13,7 +13,7 @@ export const Container = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 550px;
+  height: 520px;
   background-image: linear-gradient(
       to bottom,
       rgba(6, 64, 103, 0.85),
@@ -21,12 +21,8 @@ export const Container = styled.header`
     ),
     url('/wall.jpg');
   background-size: 1150px;
-  background-position: 53% 20%;
+  background-position: 53% 30%;
   align-items: center;
-
-  @media screen and (min-width: 415px) {
-    height: 520px;
-  }
 
   @media screen and (min-width: 1024px) {
     background-size: 100%;
