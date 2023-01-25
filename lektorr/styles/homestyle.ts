@@ -17,7 +17,7 @@ export const Box = styled.div`
 
   h1 {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   p {
@@ -282,9 +282,10 @@ export const Order = styled.div`
     white-space: break-spaces;
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       color: #06718f;
-      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      margin-bottom: 1rem;
     }
 
     p {
@@ -292,24 +293,8 @@ export const Order = styled.div`
       color: #1687a7;
       margin-top: 0.5rem;
       line-height: 1.3rem;
-      font-size: 1.07rem;
-      font-family: 'Lexend', sans-serif;
-    }
-  }
-
-  @media screen and (min-width: 415px) {
-    div {
-      width: 310px;
-
-      h1 {
-        font-size: 1.3rem;
-        font-weight: 400;
-        margin-bottom: 1rem;
-      }
-      p {
-        font-size: 1.05rem;
-        font-weight: 400;
-      }
+      font-size: 1.05rem;
+      font-weight: 400;
     }
   }
 
