@@ -15,18 +15,19 @@ export const Box = styled.div`
     max-width: 350px;
   }
 
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
+
   @media screen and (min-width: 415px) {
     > div {
       max-width: 295px;
-    }
-
-    h1 {
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-    p {
-      font-size: 1.05rem;
-      font-weight: 400;
     }
   }
 
