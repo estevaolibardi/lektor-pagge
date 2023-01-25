@@ -9,7 +9,7 @@ export const Box = styled.div`
   background-color: #f3faff;
   font-family: 'Lexend', sans-serif;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   text-align: center;
 
   > div {
@@ -260,8 +260,8 @@ export const Third = styled.div`
 
 export const Order = styled.div`
   background-color: #ddefff;
-  height: 21rem;
-  padding-top: 3rem;
+  height: 23rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   width: 100%;
   display: flex;
@@ -279,11 +279,11 @@ export const Order = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    width: 325px;
     white-space: break-spaces;
 
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #06718f;
       font-weight: 500;
       margin-bottom: 1rem;
@@ -294,7 +294,7 @@ export const Order = styled.div`
       color: #1687a7;
       margin-top: 0.5rem;
       line-height: 1.3rem;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 400;
     }
   }

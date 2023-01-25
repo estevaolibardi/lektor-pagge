@@ -103,9 +103,8 @@ export const Container = styled.div`
 
   h1 {
     font-size: 1.5rem;
-    margin-top: 4rem;
     margin-bottom: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     width: 300px;
     text-align: start;
     color: #06718f;
