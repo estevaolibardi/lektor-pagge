@@ -8,12 +8,11 @@ type ActiveProp = {
   actived: boolean;
 };
 
-export const Ma = styled.div``;
-
 export const Container = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 550px;
   background-image: linear-gradient(
       to bottom,
@@ -23,10 +22,32 @@ export const Container = styled.header`
     url('/wall.jpg');
   background-size: 1150px;
   background-position: 53% 20%;
-  /* zoom: 0.9; */
+  align-items: center;
+
+  @media screen and (min-width: 415px) {
+    height: 520px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-size: 100%;
+    background-position: 53% 50%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    /* height: 600px; */
+    background-size: 100%;
+    background-position: 100% 40%;
+  }
+`;
+
+export const SectionContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   section {
-    padding: 120px 35px 0 35px;
+    padding: 90px 35px 0 35px;
     color: #eff0e8;
     width: 100%;
 
@@ -60,7 +81,7 @@ export const Container = styled.header`
     }
 
     button {
-      width: 220px;
+      width: 175px;
       border-radius: 5px;
       font-size: 1.1rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -73,10 +94,54 @@ export const Container = styled.header`
       align-items: center;
       justify-content: center;
     }
-  }
 
-  @media screen and (min-width: 415px) {
-    height: 520px;
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      max-width: 794px;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        width: 500px;
+        font-size: 1.1rem;
+      }
+
+      button {
+        width: 175px;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      max-width: 1060px;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        width: 800px;
+        font-size: 1.5rem;
+      }
+
+      button {
+        width: 220px;
+      }
+    }
   }
 `;
 
@@ -96,7 +161,7 @@ export const Nav = styled.nav<ActiveProp>`
     background-color: red;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1024px) {
     transition: 0.8s all ease;
   }
 `;
@@ -109,12 +174,56 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 35px;
   max-width: 1400px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+    max-width: 888px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    max-width: 965px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    padding: 0;
+    max-width: max(965px, 1025px);
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0;
+    max-width: max(1025px, 1200px);
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 0;
+    max-width: 1400px;
+  }
 `;
 
 export const LeftBox = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+
+  ul {
+    display: none;
+    li {
+      cursor: pointer;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img,
+    h1 {
+      cursor: pointer;
+    }
+  }
 
   img {
     width: 1.5rem;
@@ -124,6 +233,27 @@ export const LeftBox = styled.div`
   h1 {
     font-size: 1.8rem;
     color: #ffff;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      font-family: 'Lexend', sans-serif;
+      color: #ffff;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    ul {
+      font-size: 1.3rem;
+      gap: 4rem;
+    }
   }
 `;
 
@@ -163,7 +293,6 @@ export const Aside = styled.div<ContainerProps>`
   right: 0px;
   width: 100%;
   max-width: 27.3rem;
-
   background-color: #064067;
   z-index: 100;
   opacity: 1;

@@ -4,7 +4,9 @@ import Page from '../components/page';
 export default function About() {
   return (
     <Page title="Sobre" description={'Descrição sobre'}>
-      <div></div>
+      <div>
+        <h1>PAGINA</h1>
+      </div>
     </Page>
   );
 }

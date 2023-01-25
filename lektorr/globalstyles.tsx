@@ -6,8 +6,19 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.primary};
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+    font-family: 'Lexend', sans-serif;
+       
+      
+  }
+
+  
+
+  h1{
+    margin: 0;
+  }
+
+  p{
+    margin: 0;
   }
 
   a {
@@ -20,9 +31,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .swiper {
-  width: 100%;
-  height: 100%;
-}
+    width: 350px;
+    height: 100%;
+
+    @media screen and (min-width: 1440px) {
+      width: 660px;
+    height: 100%;
+    }
+    
+  }
 
 .swiper-slide {
   text-align: center;

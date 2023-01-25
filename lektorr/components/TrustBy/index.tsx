@@ -13,10 +13,11 @@ export function TrustBy() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 4500,
+        //   disableOnInteraction: false,
+        // }}
+        effect={'fade'}
         navigation={false}
         modules={[Autoplay]}
         className="mySwiper"
@@ -57,31 +58,21 @@ export function TrustBy() {
         <SwiperSlide>
           <Box>
             <div>
-              <Image
-                src="/jaepel.jpg"
-                alt="monitoring"
-                width={115}
-                height={40}
-              />
+              <Image src="/trww.png" alt="monitoring" width={100} height={40} />
 
               <Image
-                src="/bosch.png"
-                alt="monitoring"
-                width={160}
-                height={40}
-              />
-
-              <Image
-                src="/ambev.png"
-                alt="monitoring"
-                width={120}
-                height={35}
-              />
-
-              <Image
-                src="/solvian.png"
+                src="/santander.png"
                 alt="monitoring"
                 width={150}
+                height={40}
+              />
+
+              <Image src="/kspg.png" alt="monitoring" width={115} height={40} />
+
+              <Image
+                src="/transpetro.jpg"
+                alt="monitoring"
+                width={170}
                 height={40}
               />
             </div>
@@ -91,32 +82,12 @@ export function TrustBy() {
           <Box>
             <div>
               <Image
-                src="/jaepel.jpg"
+                src="/martinho.png"
                 alt="monitoring"
-                width={115}
-                height={40}
-              />
-
-              <Image
-                src="/bosch.png"
-                alt="monitoring"
-                width={160}
-                height={40}
-              />
-
-              <Image
-                src="/ambev.png"
-                alt="monitoring"
-                width={120}
+                width={195}
                 height={35}
               />
-
-              <Image
-                src="/solvian.png"
-                alt="monitoring"
-                width={150}
-                height={40}
-              />
+              <Image src="/mag.jpg" alt="monitoring" width={200} height={35} />
             </div>
           </Box>
         </SwiperSlide>

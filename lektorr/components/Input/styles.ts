@@ -23,6 +23,11 @@ export const Container = styled.div`
 
   @media (min-width: 800px) {
   }
+
+  @media (min-width: 1440px) {
+    width: 160px;
+    height: 100px;
+  }
 `;
 
 export const StyledInput = styled.input`
@@ -57,7 +62,8 @@ export const StyledInput = styled.input`
 
 export const StyledError = styled.div`
   height: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
   display: flex;
   align-items: center;

@@ -10,13 +10,39 @@ import emailjs from '@emailjs/browser';
 
 export function Contact() {
   const form = useRef();
+
+  // function normalizeCardNumber(str) {
+  //   return (
+  //     str
+  //       .replace(/\D/g, '')
+  //       .replace(
+  //         /(?:(^\+\d{2})?)(?:([1-9]{2})|([0-9]{3})?)(\d{4,5})(\d{4})/,
+  //         (fullMatch, country, ddd, dddWithZero, prefixTel, suffixTel) => {
+  //           if (country)
+  //             return `${country} (${
+  //               ddd || dddWithZero
+  //             }) ${prefixTel}-${suffixTel}`;
+  //           if (ddd || dddWithZero)
+  //             return `(${ddd || dddWithZero}) ${prefixTel}-${suffixTel}`;
+  //           if (prefixTel && suffixTel) return `${prefixTel}-${suffixTel}`;
+  //           return str;
+  //         }
+  //       )
+  //       .substr(0, 15) || ''
+  //   );
+  // }
+
   const schema = yup.object().shape({
     user_email: yup
       .string()
-      .email('email inválido')
+      .email('Email inválido')
       .required('Email obrigatório'),
     user_name: yup.string().required('Nome obrigatório'),
-    user_phone: yup.string().required('Digite o telefone'),
+    user_phone: yup.string().required('Telefone obrigatório'),
+    // .matches(/^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$/, {
+    //   message: 'Insira um número válido.',
+    //   excludeEmptyString: false,
+    // }),
     message: yup.string().required('Digite uma mensagem'),
   });
 
@@ -52,15 +78,15 @@ export function Contact() {
 
   return (
     <Container>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 50">
         <path
           fill="#f3faff"
           fillOpacity="1"
-          d="M0,256L1440,160L1440,0L0,0Z"
+          d="M0,50L1440,10L1440,0L0,0Z"
         ></path>
       </svg>
+
       <FormContainer>
-        <h1>Entre em contato Conosco!</h1>
         <Image
           src="/contato.png"
           height={180}
@@ -69,41 +95,44 @@ export function Contact() {
           priority
         />
         <FormStyle ref={form} onSubmit={handleSubmit(sendEmail)}>
-          <Input
-            placeholder="Digite seu nome"
-            name="user_name"
-            register={register}
-            label="Nome:"
-            error={errors.user_name?.message}
-            type="text"
-            autoComplete="off"
-          />
-          <Input
-            placeholder="Digite seu email"
-            name="user_email"
-            register={register}
-            label="Email:"
-            error={errors.user_email?.message}
-            type="email"
-            autoComplete="off"
-            id="user_email"
-          />
-          <Input
-            placeholder="Digite seu telefone"
-            name="user_phone"
-            register={register}
-            label="Telefone:"
-            error={errors.user_phone?.message}
-            type="text"
-            id="user_phone"
-            autoComplete="off"
-          />
+          <h1>Entre em contato Conosco!</h1>
+          <div>
+            <Input
+              placeholder="Digite seu nome"
+              name="user_name"
+              label="Nome:"
+              error={errors.user_name?.message}
+              type="text"
+              register={register}
+            />
+            <Input
+              placeholder="Digite seu email"
+              name="user_email"
+              register={register}
+              label="Email:"
+              error={errors.user_email?.message}
+              type="text"
+              autoComplete="off"
+            />
+            <Input
+              name="user_phone"
+              register={register}
+              label="Telefone:"
+              error={errors.user_phone?.message}
+              autoComplete="off"
+              placeholder="(DD) 00000-0000"
+              type="tel"
+              // onChange={(event) => {
+              //   const { value } = event.target;
+              //   event.target.value = normalizeCardNumber(value);
+              // }}
+            />
+          </div>
           <TextArea
             placeholder="Digite sua mensagem"
             name="message"
             register={register}
             label="Mensagem:"
-            id="message"
             error={errors.message?.message}
           />
           <BtnBox>

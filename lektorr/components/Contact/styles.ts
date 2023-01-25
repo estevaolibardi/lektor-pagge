@@ -7,14 +7,6 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: 'Lexend', sans-serif;
-    color: #06718f;
-  }
-
   img {
     max-width: 100%;
     height: 18.7rem;
@@ -28,6 +20,20 @@ export const FormContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 6rem;
+    flex-direction: row;
+    height: 578px;
+    align-items: flex-start;
+    gap: 4rem;
+
+    img {
+      height: auto;
+      width: auto;
+    }
+  }
 `;
 
 export const FormStyle = styled.form`
@@ -38,6 +44,38 @@ export const FormStyle = styled.form`
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
+  h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Lexend', sans-serif;
+    color: #06718f;
+    margin-bottom: 2rem;
+  }
+
+  > div {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 550px;
+    height: 482px;
+    justify-content: flex-end;
+    padding-bottom: 0;
+
+    > h1 {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    > div {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
 `;
 
 export const BtnBox = styled.div`
@@ -49,6 +87,7 @@ export const BtnBox = styled.div`
     background-color: #228ff4;
     color: white;
     height: 40px;
+    cursor: pointer;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -60,5 +99,10 @@ export const BtnBox = styled.div`
     font-size: 0.9rem;
     letter-spacing: 0.03rem;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+    :hover {
+      background-color: #009688;
+      transition: ease 0.4s;
+    }
   }
 `;

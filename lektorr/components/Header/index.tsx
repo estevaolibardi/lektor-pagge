@@ -1,10 +1,17 @@
 import Image from 'next/image';
 import { ReactNode, useState } from 'react';
 import Logo from '../../assets/vector.png';
-import { FaBars } from 'react-icons/fa';
 import BurguerMenu from '../BurguerMenu/index';
 import Link from 'next/link';
-import { Container, Nav, NavbarContainer, Aside, LeftBox } from './styles';
+
+import {
+  Container,
+  Nav,
+  NavbarContainer,
+  Aside,
+  LeftBox,
+  SectionContainer,
+} from './styles';
 
 interface TesteProps {
   handleOpenNav: () => void;
@@ -13,6 +20,13 @@ interface TesteProps {
 
 export function Header({ handleOpenNav, open }: TesteProps) {
   const [active, setActive] = useState(false);
+
+  function handleScrollTop() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -31,8 +45,17 @@ export function Header({ handleOpenNav, open }: TesteProps) {
       <Nav actived={active}>
         <NavbarContainer>
           <LeftBox>
-            <Image src={Logo} alt="wall" />
-            <h1>Lektor</h1>
+            <div onClick={handleScrollTop}>
+              <Image src={Logo} alt="wall" />
+              <h1>Lektor</h1>
+            </div>
+
+            <ul>
+              <li>
+                <Link href="/about">Sobre</Link>
+              </li>
+              <li>Contato</li>
+            </ul>
           </LeftBox>
 
           <BurguerMenu handleOpenNav={handleOpenNav} open={open} />
@@ -49,15 +72,18 @@ export function Header({ handleOpenNav, open }: TesteProps) {
           </Aside>
         </NavbarContainer>
       </Nav>
-
-      <section>
-        <h1>Sistema de Monitoramento Inteligente.</h1>
-        <h2>
-          <span>Antecipe o Futuro!</span>
-        </h2>
-        <p>E se você soubesse quando suas máquinas vão falhar?</p>
-        <button>Saiba mais</button>
-      </section>
+      <SectionContainer>
+        <section>
+          <h1>Sistema de Monitoramento Inteligente.</h1>
+          <h2>
+            <span>Antecipe o Futuro!</span>
+          </h2>
+          <p>E se você soubesse quando suas máquinas vão falhar?</p>
+          <Link href="/about">
+            <button>Saiba mais</button>
+          </Link>
+        </section>
+      </SectionContainer>
     </Container>
   );
 }

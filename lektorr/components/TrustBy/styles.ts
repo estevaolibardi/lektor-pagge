@@ -19,6 +19,16 @@ export const Container = styled.div`
     color: #06718f;
     margin-bottom: 2rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 10rem;
+    padding-bottom: 0;
+
+    h1 {
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
 `;
 
 export const Box = styled.div`
@@ -31,5 +41,11 @@ export const Box = styled.div`
     display: flex;
     gap: 30px;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1440px) {
+    div {
+      width: 100%;
+    }
   }
 `;

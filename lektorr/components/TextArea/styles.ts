@@ -11,7 +11,8 @@ export const Container = styled.div`
     font-family: 'Lexend', sans-serif;
     color: #4e8896;
     font-size: 0.9rem;
-    text-indent: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 10px;
 
     ::placeholder {
@@ -38,11 +39,16 @@ export const Container = styled.div`
     font-family: 'Lexend', sans-serif;
     font-size: 1.1rem;
   }
+
+  @media (min-width: 1440px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledError = styled.div`
   height: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
   display: flex;
   align-items: center;

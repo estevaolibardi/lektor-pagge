@@ -1,5 +1,9 @@
 import { Container, StyledInput, StyledError } from './styles';
-import { RegisterOptions, UseFormRegisterReturn } from 'react-hook-form';
+import {
+  RegisterOptions,
+  UseFormRegisterReturn,
+  ValidationMode,
+} from 'react-hook-form';
 
 type Props = {
   placeholder?: string;
@@ -20,7 +24,6 @@ const Input = ({
   name,
   error,
   autoComplete,
-  id,
 }: Props) => {
   return (
     <Container>
