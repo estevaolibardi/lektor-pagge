@@ -9,7 +9,7 @@ import Image from 'next/image';
 export function TrustBy() {
   return (
     <Container>
-      <h1>Empresas que já confiam no monitoramento Lektor</h1>
+      <h1>Empresas que já confiam no monitoramento Lektor!</h1>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 type ContainerProps = {
   open: boolean;
+  handleOpenNav: () => void;
 };
 
 type ActiveProp = {

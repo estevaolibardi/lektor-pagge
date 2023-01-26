@@ -43,7 +43,7 @@ export const FormStyle = styled.form`
   align-items: center;
   flex-direction: column;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 
   h1 {
     text-align: center;

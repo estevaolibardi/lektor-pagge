@@ -28,6 +28,14 @@ export function Header({ handleOpenNav, open }: TesteProps) {
     });
   }
 
+  function handleScrollContact() {
+    handleOpenNav();
+    window.scroll({
+      top: 2100,
+      behavior: 'smooth',
+    });
+  }
+
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setActive(true);
@@ -59,14 +67,14 @@ export function Header({ handleOpenNav, open }: TesteProps) {
           </LeftBox>
 
           <BurguerMenu handleOpenNav={handleOpenNav} open={open} />
-          <Aside open={open}>
+          <Aside open={open} handleOpenNav={handleOpenNav}>
             <div>
               <ul>
                 <li>
                   <Link href="/about">Sobre</Link>
                 </li>
 
-                <li>Contato</li>
+                <li onClick={handleScrollContact}>Contato</li>
               </ul>
             </div>
           </Aside>
