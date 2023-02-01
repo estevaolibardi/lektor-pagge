@@ -13,14 +13,14 @@ import { Footer } from '../components/Footer';
 
 export default function Home() {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(1);
 
   const handleOpenNav = () => {
     setOpen(!open);
   };
 
   const toggle = (i) => {
-    if (selected === i + 1) {
+    if (selected === i + selected + 1) {
       return setSelected(null);
     }
     setSelected(i + 1);

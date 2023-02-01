@@ -32,7 +32,7 @@ const data: { question: string; answer: string; image: string; id: number }[] =
       id: 3,
       question: 'Melhor controle e planejamento da manutenção!',
       answer:
-        'Através da avaliação online da condição das máquinas, reduza o estoque de sobressalentes, tenha melhor planejamento de compra de peças, e tenha melhor controle da manutenção  através do envio automático de emails, sempre que uma situação crítica for detectada na máquina.                                                                                                    ',
+        'Reduza o estoque de sobressalentes, tenha melhor planejamento de compra de peças, receba emails automáticos sempre que uma situação crítica for detectada na máquina.                                                                                                    ',
       image: '/monitoringg.png',
     },
     {
@@ -94,7 +94,7 @@ const Accordion = ({ toggle, selected }: Type) => {
           </BoxContent>
 
           <Img>
-            <Image src="/test.jpg" width={500} height={300} alt="pc" />
+            <Image src="/blue.jpg" width={500} height={300} alt="pc" />
           </Img>
         </div>
       </Cont>

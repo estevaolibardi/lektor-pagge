@@ -37,13 +37,20 @@ export const Img = styled.div`
   align-items: center;
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 450px;
+    border-radius: 20px;
+    /* opacity: 0.85; */
     position: unset;
   }
 
   @media screen and (min-width: 1024px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 1440px) {
+    img {
+      margin-top: 2rem;
+    }
   }
 `;
 
@@ -58,21 +65,19 @@ export const Cont = styled.div`
     display: flex;
     align-items: center;
     gap: 10rem;
-    margin-top: 7rem;
+    margin-top: 10rem;
     justify-content: center;
   }
 
   @media screen and (min-width: 1440px) {
     > div {
       width: 1400px;
-      height: 420px;
-      gap: 2rem;
+      height: 500px;
+      align-items: flex-start;
+      gap: 5rem;
 
       > div {
-        height: 550px;
         width: 550px;
-        align-items: flex-start;
-
         h1 {
           color: #06718f;
         }
@@ -97,6 +102,7 @@ export const BoxContent = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 350px;
+  height: 510px;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -130,11 +136,12 @@ export const Container = styled.div`
 
   @media screen and (min-width: 1440px) {
     width: 100%;
-    margin-top: 3rem;
+    height: 500px;
 
     h1 {
       margin-top: 0rem;
       font-size: 1.8rem;
+      width: 100%;
     }
 
     div {
@@ -154,9 +161,9 @@ export const Answer = styled.div<ActiveProp>`
   margin-bottom: 1.2rem;
   font-size: 1rem;
   padding-left: 0.5rem;
-  text-align: justify;
-  font-family: 'Lexend', sans-serif;
+
   display: flex;
+  text-align: justify;
   height: auto;
   max-height: ${({ selected }) => (selected ? '9999px' : '0')};
   overflow: hidden;
@@ -167,6 +174,7 @@ export const Answer = styled.div<ActiveProp>`
 
   @media screen and (min-width: 1440px) {
     font-size: 1.2rem;
+    text-align: left;
   }
 `;
 

@@ -64,6 +64,7 @@ export const Box = styled.div`
   @media screen and (min-width: 1440px) {
     height: 28rem;
     padding-top: 0;
+    padding-bottom: 0;
 
     > div {
       max-width: none;
@@ -118,6 +119,7 @@ export const First = styled.div`
 
   @media screen and (min-width: 1440px) {
     text-align: center;
+    height: 12rem;
 
     svg {
       width: 45px;
@@ -240,6 +242,8 @@ export const Third = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
+    height: 12rem;
+
     svg {
       width: 45px;
     }
