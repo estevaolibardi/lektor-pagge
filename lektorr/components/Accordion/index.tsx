@@ -70,7 +70,10 @@ const Accordion = ({ toggle, selected }: Type) => {
         <div>
           <BoxContent>
             <Container className="accordion">
-              <h1>Como a Lektor pode me ajudar?</h1>
+              <div>
+                <h1>Como a Lektor pode me ajudar?</h1>
+              </div>
+
               {data.map((item, i) => (
                 <BoxAccordion key={i}>
                   <Question onClick={() => toggle(i)}>

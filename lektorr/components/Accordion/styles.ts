@@ -65,7 +65,7 @@ export const Cont = styled.div`
     display: flex;
     align-items: center;
     gap: 10rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     justify-content: center;
   }
 
@@ -102,7 +102,7 @@ export const BoxContent = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 350px;
-  height: 510px;
+  height: 530px;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -111,14 +111,14 @@ export const Container = styled.div`
     font-size: 1.5rem;
     margin-bottom: 2rem;
     font-weight: 500;
-    width: 300px;
+    width: 350px;
     text-align: start;
     color: #06718f;
     font-family: 'Lexend', sans-serif;
   }
 
   > div {
-    width: 320px;
+    width: 350px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -159,7 +159,7 @@ export const BoxAccordion = styled.div`
 export const Answer = styled.div<ActiveProp>`
   color: #1687a7;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-left: 0.5rem;
 
   display: flex;
@@ -190,7 +190,7 @@ export const Question = styled.div`
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     width: 300px;
     font-weight: 500;
     font-family: 'Lexend', sans-serif;
