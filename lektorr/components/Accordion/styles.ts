@@ -4,6 +4,10 @@ type ActiveProp = {
   selected: any;
 };
 
+type ActiveProps = {
+  selected: any;
+};
+
 export const Box = styled.div`
   display: flex;
   width: 100%;
@@ -178,7 +182,7 @@ export const Answer = styled.div<ActiveProp>`
   }
 `;
 
-export const Question = styled.div`
+export const Question = styled.div<ActiveProps>`
   color: #06718f;
   display: flex;
   justify-content: space-between;
@@ -192,7 +196,7 @@ export const Question = styled.div`
   h2 {
     font-size: 1.2rem;
     width: 300px;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-family: 'Lexend', sans-serif;
     cursor: pointer;
   }

@@ -14,6 +14,7 @@ import { Footer } from '../components/Footer';
 export default function Home() {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(1);
+  console.log(selected);
 
   const handleOpenNav = () => {
     setOpen(!open);

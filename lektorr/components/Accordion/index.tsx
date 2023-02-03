@@ -49,6 +49,18 @@ type Type = {
   selected: any;
 };
 
+const STYLE = {
+  infoColor: {
+    color: 'green',
+  },
+  warningColor: {
+    color: 'orange',
+  },
+  errorColor: {
+    color: 'red',
+  },
+};
+
 const Accordion = ({ toggle, selected }: Type) => {
   return (
     <Box>
@@ -76,7 +88,7 @@ const Accordion = ({ toggle, selected }: Type) => {
 
               {data.map((item, i) => (
                 <BoxAccordion key={i}>
-                  <Question onClick={() => toggle(i)}>
+                  <Question onClick={() => toggle(i)} selected={selected}>
                     <span>
                       {selected === i + 1 ? (
                         <RiArrowUpSLine size={30} color="#228FF4" />
@@ -84,7 +96,15 @@ const Accordion = ({ toggle, selected }: Type) => {
                         <RiArrowDownSLine size={30} color="#228FF4" />
                       )}
                     </span>
-                    <h2>{item.question}</h2>
+                    <h2
+                      style={
+                        selected === i + 1
+                          ? { fontWeight: '500' }
+                          : { fontWeight: '400' }
+                      }
+                    >
+                      {item.question}
+                    </h2>
                   </Question>
                   {selected === i + 1 ? (
                     <Answer selected={selected}>{item.answer}</Answer>
