@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   textarea {
     width: 100%;
-    background-color: aliceblue;
+    background-color: #fefefe;
     border: 2px solid #e9eff5;
     resize: none;
     border-radius: 5px;
@@ -19,6 +19,12 @@ export const Container = styled.div`
       color: #8fbac4;
       font-size: 0.9rem;
       font-family: 'Lexend', sans-serif;
+    }
+
+    :hover {
+      border: 2px solid #75cee3;
+      transition: ease 0.5s;
+      background-color: #e6f3ff;
     }
 
     :focus {

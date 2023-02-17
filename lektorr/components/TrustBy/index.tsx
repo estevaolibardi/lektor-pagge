@@ -9,7 +9,6 @@ import Image from 'next/image';
 export function TrustBy() {
   return (
     <Container>
-      <h1>Empresas que já confiam no monitoramento Lektor!</h1>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -24,71 +23,17 @@ export function TrustBy() {
       >
         <SwiperSlide>
           <Box>
-            <div>
-              <Image
-                src="/jaepel.jpg"
-                alt="monitoring"
-                width={115}
-                height={40}
-              />
-
-              <Image
-                src="/bosch.png"
-                alt="monitoring"
-                width={160}
-                height={40}
-              />
-
-              <Image
-                src="/ambev.png"
-                alt="monitoring"
-                width={120}
-                height={35}
-              />
-
-              <Image
-                src="/solvian.png"
-                alt="monitoring"
-                width={150}
-                height={40}
-              />
-            </div>
+            <div></div>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box>
-            <div>
-              <Image src="/trww.png" alt="monitoring" width={100} height={40} />
-
-              <Image
-                src="/santander.png"
-                alt="monitoring"
-                width={150}
-                height={40}
-              />
-
-              <Image src="/kspg.png" alt="monitoring" width={115} height={40} />
-
-              <Image
-                src="/transpetro.jpg"
-                alt="monitoring"
-                width={170}
-                height={40}
-              />
-            </div>
+            <div></div>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box>
-            <div>
-              <Image
-                src="/martinho.png"
-                alt="monitoring"
-                width={195}
-                height={35}
-              />
-              <Image src="/mag.jpg" alt="monitoring" width={200} height={35} />
-            </div>
+            <div></div>
           </Box>
         </SwiperSlide>
       </Swiper>

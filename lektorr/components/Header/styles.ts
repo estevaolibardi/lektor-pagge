@@ -9,31 +9,128 @@ type ActiveProp = {
   actived: boolean;
 };
 
+export const TrustBy = styled.div`
+  margin-top: 4rem;
+  display: flex;
+  justify-content: end;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    img {
+      width: 120px;
+
+      :nth-child(2) {
+        margin-right: 70px;
+        width: 130px;
+        height: 25px;
+      }
+
+      :last-child {
+        width: 200px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 5rem;
+
+    div {
+      width: 1000px;
+
+      img {
+        :nth-child(2) {
+          margin-right: 0px;
+          width: 160px;
+          height: 25px;
+        }
+
+        :last-child {
+          width: 250px;
+          height: 22px;
+        }
+      }
+    }
+  }
+`;
+
+export const CallBtn = styled.div`
+  width: 175px;
+
+  button {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 45px;
+    border: none;
+    background-color: #228ff4;
+    color: #ffff;
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    :hover {
+      background-color: #00c564;
+      transition: ease 0.3s;
+      font-weight: 500;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 175px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 220px;
+    }
+  }
+`;
+
 export const Container = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 520px;
+  height: 765px;
   background-image: linear-gradient(
       to bottom,
       rgba(6, 64, 103, 0.85),
-      rgba(10, 65, 102, 0.65)
+      rgba(10, 65, 102, 0.75)
     ),
     url('/wall.jpg');
   background-size: 1150px;
-  background-position: 53% 30%;
+  background-repeat: no-repeat;
+  background-position: 53% 0%;
   align-items: center;
+
+  svg {
+    position: absolute;
+    top: 44rem;
+    width: 100%;
+  }
 
   @media screen and (min-width: 1024px) {
     background-size: 100%;
     background-position: 53% 50%;
+
+    svg {
+      top: 36rem;
+    }
   }
 
   @media screen and (min-width: 1440px) {
-    /* height: 600px; */
+    height: 825px;
     background-size: 100%;
-    background-position: 100% 40%;
+    background-position: 0% 58%;
+    background-size: 1900px;
   }
 `;
 
@@ -71,25 +168,10 @@ export const SectionContainer = styled.div`
       margin-top: 1.5rem;
       margin-bottom: 3rem;
       font-size: 1.3rem;
-      font-weight: 600;
+      font-weight: 500;
       font-family: 'Lexend', sans-serif;
       color: #eff0e8;
-      width: 300px;
-    }
-
-    button {
-      width: 175px;
-      border-radius: 5px;
-      font-size: 1.1rem;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      height: 45px;
-      border: none;
-      background-color: #228ff4;
-      color: #ffff;
-      font-family: 'Lexend', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 290px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -109,6 +191,7 @@ export const SectionContainer = styled.div`
       p {
         width: 500px;
         font-size: 1.1rem;
+        font-weight: 400;
       }
 
       button {
@@ -120,48 +203,54 @@ export const SectionContainer = styled.div`
       padding: 0;
       display: flex;
       flex-direction: column;
-      max-width: 1060px;
+      /* width: 1130px; */
+      max-width: 1200px;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
       }
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        letter-spacing: 0.1rem;
       }
 
       p {
-        width: 800px;
-        font-size: 1.5rem;
-      }
-
-      button {
-        width: 220px;
+        width: 695px;
+        font-size: 1.6rem;
       }
     }
   }
-`;
 
-export const Nav = styled.nav<ActiveProp>`
-  background: ${({ actived }) => (actived ? '#00708d' : 'transparent')};
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-
-  .active {
-    background-color: red;
-  }
-
-  @media screen and (max-width: 1024px) {
-    transition: 0.8s all ease;
+  @media screen and (min-width: 1440px) {
+    width: 1400px;
+    justify-content: flex-start;
+    margin-top: 4rem;
   }
 `;
+
+// export const Nav = styled.nav<ActiveProp>`
+//   background: ${({ actived }) => (actived ? '#00708d' : 'transparent')};
+//   width: 100%;
+//   height: 80px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 1rem;
+//   position: fixed;
+//   top: 0;
+//   z-index: 10;
+
+//   .active {
+//     background-color: red;
+//   }
+
+//   @media screen and (max-width: 1024px) {
+//     transition: 0.8s all ease;
+//   }
+// `;
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -207,6 +296,9 @@ export const LeftBox = styled.div`
     display: none;
     li {
       cursor: pointer;
+      :hover {
+        color: #00c564;
+      }
     }
   }
 
@@ -246,7 +338,8 @@ export const LeftBox = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
+    gap: 0px;
     ul {
       font-size: 1.3rem;
       gap: 4rem;

@@ -6,14 +6,18 @@ export const Box = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f3faff;
+  background-color: #fff;
   font-family: 'Lexend', sans-serif;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 4rem;
   text-align: center;
 
   > div {
     max-width: 295px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   h1 {
@@ -24,12 +28,6 @@ export const Box = styled.div`
   p {
     font-size: 1.1rem;
     font-weight: 400;
-  }
-
-  @media screen and (min-width: 415px) {
-    > div {
-      max-width: 295px;
-    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -43,6 +41,7 @@ export const Box = styled.div`
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+      flex-direction: row;
     }
 
     svg {
@@ -62,15 +61,18 @@ export const Box = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    height: 28rem;
+    height: 22rem;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 6rem;
 
     > div {
       max-width: none;
-      width: 100%;
+      width: 1400px;
+      height: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      align-items: flex-end;
     }
   }
 `;
@@ -81,7 +83,6 @@ export const First = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 3rem;
   height: 10.5rem;
 
   svg {
@@ -126,12 +127,12 @@ export const First = styled.div`
     }
 
     h1 {
-      font-size: 1.5rem;
-      width: 18rem;
+      font-size: 1.25rem;
+      width: 15rem;
       margin: 1rem 0;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       width: 20rem;
       height: 65px;
     }
@@ -143,7 +144,6 @@ export const Second = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 3rem;
   text-align: center;
   height: 12rem;
 
@@ -186,8 +186,8 @@ export const Second = styled.div`
     }
 
     h1 {
-      font-size: 1.5rem;
-      width: 15rem;
+      font-size: 1.25rem;
+      width: 14rem;
       margin: 1rem 0;
       text-align: center;
     }
@@ -249,7 +249,7 @@ export const Third = styled.div`
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       width: 20rem;
       text-align: center;
       margin: 1rem 0;
@@ -263,10 +263,6 @@ export const Third = styled.div`
 `;
 
 export const Order = styled.div`
-  background-color: #ddefff;
-  height: 23rem;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -278,19 +274,38 @@ export const Order = styled.div`
     top: 4px;
   }
 
-  div {
+  > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 325px;
+    width: 100%;
+    margin-top: -1rem;
     white-space: break-spaces;
+    background-color: #064067;
+
+    /* span {
+      --color: #fff;
+      --position: 0.1rem 3rem;
+      --width: 150px;
+      --height: 9px;
+      background: linear-gradient(var(--color), var(--color)) var(--position) /
+        var(--width) var(--height) no-repeat;
+      padding-bottom: 15px;
+    } */
 
     h1 {
-      font-size: 1.4rem;
-      color: #06718f;
+      font-size: 1.6rem;
+      color: #fff;
       font-weight: 500;
       margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #13cfff;
+      font-weight: 400;
+      text-align: center;
     }
 
     p {
@@ -304,16 +319,14 @@ export const Order = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 18.5rem;
-    padding-top: 5rem;
-
-    div {
+    > div {
       width: 565px;
+      margin-top: 10rem;
+      background-color: #00000000;
 
       h1 {
         font-size: 1.4rem;
         font-weight: 400;
-        padding-bottom: 1rem;
       }
       p {
         font-size: 1.05rem;
@@ -323,16 +336,24 @@ export const Order = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    height: 18rem;
+    /* position: relative; */
 
-    div {
-      width: 565px;
+    svg {
+      position: absolute;
+      z-index: -1;
+    }
+
+    > div {
+      width: 100%;
+      /* height: 43rem; */
+      justify-content: space-between;
+      margin-top: 12rem;
 
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 400;
-        padding-bottom: 1rem;
       }
+
       p {
         font-weight: 400;
         font-size: 1.25rem;
@@ -340,6 +361,88 @@ export const Order = styled.div`
         text-align: center;
         line-height: 1.5rem;
       }
+    }
+  }
+`;
+
+export const Main = styled.div`
+  background-color: #064067;
+  margin-top: -1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const MainTech = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  > div {
+    width: 350px;
+    height: 885px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      width: 100%;
+
+      h3 {
+        color: #ffff;
+        font-size: 1.5rem;
+        font-family: 'Lexend', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        width: 100%;
+        color: #ffff;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1400px;
+    flex-direction: row;
+    align-items: flex-start;
+
+    > div {
+      height: 500px;
+      width: 920px;
+      margin-top: 4rem;
+
+      > div {
+        width: 410px;
+
+        h3 {
+          text-align: left;
+          text-decoration: underline #3ccefe;
+          text-underline-offset: 7px;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 18px;
+          text-align: left;
+        }
+      }
+    }
+
+    img {
+      width: 350px;
+      height: 296px;
     }
   }
 `;

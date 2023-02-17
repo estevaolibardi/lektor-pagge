@@ -15,11 +15,11 @@ export const Box = styled.div`
   flex-direction: column;
   padding-bottom: 1rem;
   align-items: center;
-  background-color: #f3faff;
-  position: relative;
+  background-color: #fefefe;
+  /* position: relative; */
 
   img {
-    position: absolute;
+    /* position: absolute; */
     top: -12vh;
     height: auto;
   }
@@ -28,7 +28,7 @@ export const Box = styled.div`
     padding-bottom: 0;
 
     img {
-      position: absolute;
+      /* position: absolute; */
       top: -3vh;
       width: auto;
     }
@@ -41,7 +41,7 @@ export const Img = styled.div`
   align-items: center;
 
   img {
-    width: 450px;
+    width: 400px;
     border-radius: 20px;
     /* opacity: 0.85; */
     position: unset;
@@ -78,12 +78,14 @@ export const Cont = styled.div`
       width: 1400px;
       height: 500px;
       align-items: flex-start;
+      margin-top: 6rem;
       gap: 5rem;
+      justify-content: flex-start;
 
       > div {
         width: 550px;
         h1 {
-          color: #06718f;
+          color: #0050a5;
         }
       }
     }
@@ -117,7 +119,7 @@ export const Container = styled.div`
     font-weight: 500;
     width: 350px;
     text-align: start;
-    color: #06718f;
+    color: #0067a4;
     font-family: 'Lexend', sans-serif;
   }
 
@@ -156,16 +158,16 @@ export const Container = styled.div`
 
 export const BoxAccordion = styled.div`
   margin-bottom: 5px;
-  border-bottom: solid 1px #228ff4;
+  border-bottom: solid 2px #b9cde8;
   width: 535px;
 `;
 
 export const Answer = styled.div<ActiveProp>`
-  color: #1687a7;
+  color: #0050a5;
   margin-bottom: 1.2rem;
   font-size: 1.1rem;
   padding-left: 0.5rem;
-
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   text-align: justify;
   height: auto;
@@ -177,13 +179,13 @@ export const Answer = styled.div<ActiveProp>`
       : 'all 0.5s cubic-bezier(1, 0, 1, 0)'};
 
   @media screen and (min-width: 1440px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: left;
   }
 `;
 
 export const Question = styled.div<ActiveProps>`
-  color: #06718f;
+  color: #0050a5;
   display: flex;
   justify-content: space-between;
   align-items: center;

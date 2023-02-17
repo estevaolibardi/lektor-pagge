@@ -64,26 +64,16 @@ const STYLE = {
 const Accordion = ({ toggle, selected }: Type) => {
   return (
     <Box>
-      <Image
-        src="/monitoringg.png"
-        alt="monitoring"
-        priority
-        width={300}
-        height={180}
-      />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-        <path
-          fill="#dceffe"
-          fillOpacity="1"
-          d="M0,100L1440,45L1440,0L0,0Z"
-        ></path>
-      </svg>
       <Cont>
         <div>
           <BoxContent>
-            <Container className="accordion">
+            <Container
+              className="accordion"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
               <div>
-                <h1>Como a Lektor pode me ajudar?</h1>
+                <h1>O que a Lektor proporciona?</h1>
               </div>
 
               {data.map((item, i) => (
@@ -93,14 +83,15 @@ const Accordion = ({ toggle, selected }: Type) => {
                       {selected === i + 1 ? (
                         <RiArrowUpSLine size={30} color="#228FF4" />
                       ) : (
-                        <RiArrowDownSLine size={30} color="#228FF4" />
+                        <RiArrowDownSLine size={30} color="#5084b8" />
                       )}
                     </span>
+
                     <h2
                       style={
                         selected === i + 1
                           ? { fontWeight: '500' }
-                          : { fontWeight: '400' }
+                          : { fontWeight: '400', color: '#5084b8' }
                       }
                     >
                       {item.question}
@@ -117,7 +108,7 @@ const Accordion = ({ toggle, selected }: Type) => {
           </BoxContent>
 
           <Img>
-            <Image src="/blue.jpg" width={500} height={300} alt="pc" />
+            <Image src="/ai.png" width={500} height={300} alt="pc" />
           </Img>
         </div>
       </Cont>

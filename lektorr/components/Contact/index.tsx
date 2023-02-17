@@ -80,7 +80,7 @@ export function Contact() {
     <Container>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 50">
         <path
-          fill="#f3faff"
+          fill="#fefefe"
           fillOpacity="1"
           d="M0,50L1440,10L1440,0L0,0Z"
         ></path>
@@ -100,6 +100,7 @@ export function Contact() {
             <Input
               placeholder="Digite seu nome"
               name="user_name"
+              text_transform={'capitalize'}
               label="Nome:"
               error={errors.user_name?.message}
               type="text"

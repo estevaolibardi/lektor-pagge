@@ -14,6 +14,8 @@ type Props = {
   error?: string;
   autoComplete?: string;
   id?: string;
+  text_transform?: string;
+  texttransform?: string;
 };
 
 const Input = ({
@@ -24,6 +26,8 @@ const Input = ({
   name,
   error,
   autoComplete,
+  texttransform,
+  ...rest
 }: Props) => {
   return (
     <Container>
@@ -32,7 +36,9 @@ const Input = ({
         type={type}
         placeholder={placeholder}
         autoComplete={autoComplete}
+        text_transform={texttransform}
         {...register(name)}
+        {...rest}
       />
       <StyledError>{!!error && <span>{error}</span>}</StyledError>
     </Container>

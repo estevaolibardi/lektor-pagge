@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #f3faff;
 
   img {
     max-width: 100%;

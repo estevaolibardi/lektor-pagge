@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+type Props = {
+  text_transform?: string;
+};
+
 export const Container = styled.div`
   width: 100%;
   height: 100px;
@@ -30,10 +34,10 @@ export const Container = styled.div`
   }
 `;
 
-export const StyledInput = styled.input`
+export const StyledInput = styled.input<Props>`
   width: 100%;
   height: 80px;
-  background-color: aliceblue;
+  background-color: #fefefe;
   border: 2px solid #e9eff5;
   border-radius: 3px;
   text-indent: 10px;
@@ -41,6 +45,7 @@ export const StyledInput = styled.input`
   border-radius: 5px;
   font-family: 'Lexend', sans-serif;
   color: #4e8896;
+  text-transform: ${(props) => props.text_transform};
 
   @media (min-width: 800px) {
     height: 48px;
@@ -51,6 +56,13 @@ export const StyledInput = styled.input`
   :focus {
     border: 2px solid #75cee3;
     outline: none;
+    background-color: #daedff;
+  }
+
+  :hover {
+    background-color: #d3ebff;
+    transition: ease 1s;
+    border: 2px solid #75cee3;
   }
 
   ::placeholder {
