@@ -203,7 +203,7 @@ export const Question = styled.div<ActiveProps>`
     font-size: 1.2rem;
     width: 300px;
     /* font-weight: 500; */
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
   }
 
