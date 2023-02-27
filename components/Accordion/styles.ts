@@ -118,7 +118,7 @@ export const Container = styled.div`
     width: 350px;
     text-align: start;
     color: #0067a4;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   > div {

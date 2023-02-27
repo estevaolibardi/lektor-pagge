@@ -29,6 +29,7 @@ export function Footer() {
               <h3>Produtos</h3>
               <p>Sensor de Vibração</p>
               <p>Sensor de Energia</p>
+              <p>Sensor de Umidade</p>
             </Column>
             <Column>
               <h3>Contato</h3>

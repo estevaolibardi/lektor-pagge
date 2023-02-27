@@ -295,7 +295,7 @@ export const Order = styled.div`
     } */
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       color: #fff;
       font-weight: 500;
       margin-bottom: 1rem;
@@ -306,6 +306,7 @@ export const Order = styled.div`
       color: #fff;
       font-weight: 400;
       text-align: center;
+      font-size: 1.2rem;
     }
 
     p {
@@ -380,11 +381,10 @@ export const MainTech = styled.div`
   justify-content: center;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 8rem;
   padding-bottom: 3rem;
 
   > div {
-    width: 350px;
+    width: 320px;
     height: 885px;
     justify-content: space-between;
     display: flex;
@@ -414,12 +414,15 @@ export const MainTech = styled.div`
   img {
     width: 250px;
     height: 250px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   @media screen and (min-width: 1440px) {
     width: 1400px;
     flex-direction: row;
     align-items: flex-start;
+    gap: 8rem;
 
     > div {
       height: 500px;
@@ -447,6 +450,7 @@ export const MainTech = styled.div`
     img {
       width: 350px;
       height: 296px;
+      margin: none;
     }
   }
 `;

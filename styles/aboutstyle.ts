@@ -4,10 +4,10 @@ export const Container = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 765px;
+  justify-content: center;
+  height: 550px;
   align-items: center;
-  background-color: green;
+  background-color: #064067;
 
   svg {
     position: absolute;
@@ -25,7 +25,6 @@ export const Container = styled.header`
   }
 
   @media screen and (min-width: 1440px) {
-    height: 1000px;
     background-size: 100%;
     background-position: 0% 58%;
     background-size: 1900px;
@@ -192,5 +191,55 @@ export const Aside = styled.div<ContainerProps>`
 
   @media screen and (min-width: 1024px) {
     display: none;
+  }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 5rem;
+  width: 1400px;
+  color: #ecf1f9;
+
+  > h1 {
+    width: 700px;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+    span {
+      --color: #2196f3;
+      --position: 0.1rem 2.8rem;
+      --width: 180px;
+      --height: 8px;
+      background: linear-gradient(var(--color), var(--color)) var(--position) /
+        var(--width) var(--height) no-repeat;
+      padding-bottom: 15px;
+    }
+  }
+
+  > p {
+    font-size: 1.2rem;
+    width: 565px;
+    font-weight: 400;
+    margin-top: 4rem;
+    letter-spacing: 0.05rem;
+  }
+`;
+
+export const Main = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+
+  > div {
+    width: 1400px;
+    display: flex;
+    height: 300px;
   }
 `;

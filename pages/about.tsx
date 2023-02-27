@@ -13,6 +13,8 @@ import {
   NavbarContainer,
   LeftBox,
   Aside,
+  Title,
+  Main,
 } from '../styles/aboutstyle';
 
 interface NavProps {
@@ -69,7 +71,24 @@ export default function About({
             </Aside>
           </NavbarContainer>
         </NavBox>
+
+        <Title>
+          <h1>
+            Sem quebras, maior vida útil e melhor performance de suas máquinas.
+          </h1>
+          <h1>
+            Faça a <span>melhor</span> Preditiva!
+          </h1>
+          <p>
+            Adquira um sistema de monitoramento on-line capaz de mapear toda sua
+            planta fabril, e detecte falhas em estágio inicial através de
+            análises feitas por inteligência artificial.
+          </p>
+        </Title>
       </Container>
+      <Main>
+        <div></div>
+      </Main>
     </Page>
   );
 }
