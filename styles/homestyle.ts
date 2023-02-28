@@ -60,6 +60,37 @@ export const Box = styled.div`
     }
   }
 
+  @media screen and (min-width: 1366px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding-top: 7rem;
+
+    > div {
+      max-width: none;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+    svg {
+      width: 35px;
+    }
+
+    h1 {
+      font-size: 1rem;
+      width: 100%;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 0.9rem;
+      width: 250px;
+      height: 65px;
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     height: 22rem;
     padding-top: 0;
@@ -165,6 +196,27 @@ export const Second = styled.div`
 
     svg {
       width: 45px;
+    }
+
+    h1 {
+      font-size: 1rem;
+      width: 70%;
+      margin: 1rem 0;
+      text-align: center;
+    }
+    p {
+      font-size: 0.9rem;
+      width: 100%;
+      height: 65px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    max-width: 250px;
+    height: 10rem;
+
+    svg {
+      width: 35px;
     }
 
     h1 {
@@ -323,6 +375,23 @@ export const Order = styled.div`
     > div {
       /* width: 565px; */
       margin-top: -7rem;
+      background-color: #00000000;
+
+      h1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.05rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    > div {
+      /* width: 565px; */
+      margin-top: -10rem;
       background-color: #00000000;
 
       h1 {

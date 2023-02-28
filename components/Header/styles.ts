@@ -66,7 +66,8 @@ export const TrustBy = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1366px) {
+    margin-top: 2rem;
     div {
       width: 825px;
       height: 100px;
@@ -282,7 +283,7 @@ export const SectionContainer = styled.div`
       display: flex;
       flex-direction: column;
       max-width: 1025px;
-      margin-top: 5rem;
+      margin-top: 4rem;
 
       h1 {
         font-size: 1.8rem;
