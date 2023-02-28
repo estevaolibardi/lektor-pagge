@@ -46,6 +46,14 @@ export const Container = styled.div`
     font-size: 1.1rem;
   }
 
+  @media (min-width: 1024px) {
+    flex-direction: column;
+
+    label {
+      font-size: 1rem;
+    }
+  }
+
   @media (min-width: 1440px) {
     flex-direction: column;
   }

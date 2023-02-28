@@ -25,7 +25,12 @@ export const Container = styled.div`
     font-size: 1.1rem;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1024px) {
+    width: 140px;
+
+    label {
+      font-size: 1rem;
+    }
   }
 
   @media (min-width: 1440px) {
@@ -47,12 +52,6 @@ export const StyledInput = styled.input<Props>`
   color: #4e8896;
   text-transform: ${(props) => props.text_transform};
 
-  @media (min-width: 800px) {
-    height: 48px;
-    box-sizing: border-box;
-    font-size: 16.2426px;
-  }
-
   :focus {
     border: 2px solid #75cee3;
     outline: none;
@@ -68,6 +67,13 @@ export const StyledInput = styled.input<Props>`
     color: #8fbac4;
     font-size: 0.9rem;
     font-family: 'Lexend', sans-serif;
+  }
+
+  @media (min-width: 1024px) {
+    ::placeholder {
+      font-size: 0.9rem;
+      font-family: 'Lexend', sans-serif;
+    }
   }
 `;
 

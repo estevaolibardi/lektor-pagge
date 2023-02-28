@@ -10,6 +10,10 @@ export const Container = styled.div`
   align-items: center;
   color: #fff;
 
+  @media screen and (min-width: 1024px) {
+    height: 500px;
+  }
+
   @media screen and (min-width: 1440px) {
     height: 575px;
   }
@@ -27,6 +31,28 @@ export const Column = styled.div`
 
   p {
     margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 128px;
+    width: 170px;
+
+    :last-child {
+      width: 120px;
+    }
+
+    h3 {
+      margin: 0 0 1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -52,9 +78,16 @@ export const BoxColumn = styled.div`
   display: flex;
   width: 100%;
 
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+  }
+
   @media screen and (min-width: 1440px) {
     flex-direction: row;
     margin-top: 1.5rem;
+    justify-content: center;
   }
 `;
 
@@ -77,8 +110,37 @@ export const Copy = styled.div`
 
       :last-child {
         text-align: center;
-
         width: 300px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 3rem;
+    width: 800px;
+
+    > div {
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        display: flex;
+        justify-content: center;
+
+        :first-child {
+          gap: 1rem;
+        }
+
+        :last-child {
+          text-align: center;
+          width: 500px;
+
+          svg {
+            height: 20px;
+          }
+        }
       }
     }
   }
@@ -97,6 +159,15 @@ export const Copy = styled.div`
 
         :first-child {
           gap: 1rem;
+        }
+
+        :last-child {
+          text-align: center;
+          width: 800px;
+
+          svg {
+            height: 20px;
+          }
         }
       }
     }
@@ -137,13 +208,20 @@ export const Info = styled.div`
     }
   }
 
-  @media screen and (min-width: 1440px) {
-    width: 1400px;
-    height: 200px;
+  @media screen and (min-width: 1024px) {
+    width: 890px;
+    height: 240px;
     flex-direction: row;
 
     > div {
-      width: 100%;
+      :first-child {
+        width: 290px;
+      }
+
+      :nth-child(2) {
+        width: 520px;
+      }
+
       h1 {
         font-size: 2.2rem;
         font-weight: 600;
@@ -156,9 +234,36 @@ export const Info = styled.div`
 
         :last-child {
           font-size: 1rem;
-          width: 380px;
+          width: 100%;
           margin-top: 2rem;
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1400px;
+    height: 200px;
+    flex-direction: row;
+
+    > div {
+      :first-child {
+        width: 380px;
+      }
+
+      :nth-child(2) {
+        width: 800px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 0.4rem;
+      }
+
+      > p {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
       }
     }
   }

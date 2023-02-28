@@ -27,6 +27,18 @@ export const FormContainer = styled.div`
   align-items: center;
   padding-top: 2rem;
 
+  @media screen and (min-width: 1024px) {
+    padding-top: 6rem;
+    flex-direction: row;
+    height: 650px;
+    align-items: flex-start;
+    gap: 2rem;
+
+    img {
+      height: 18rem;
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     padding-top: 6rem;
     flex-direction: row;
@@ -61,6 +73,25 @@ export const FormStyle = styled.form`
 
   > div {
     width: 300px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 450px;
+    height: 482px;
+    justify-content: flex-end;
+    padding-bottom: 0;
+
+    > h1 {
+      font-size: 1.4rem;
+      padding-bottom: 1rem;
+    }
+
+    > div {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   @media screen and (min-width: 1440px) {
