@@ -38,6 +38,27 @@ export const TrustBy = styled.div`
     }
   }
 
+  @media screen and (min-width: 1024px) {
+    margin-top: 5rem;
+
+    div {
+      width: 825px;
+
+      img {
+        :nth-child(2) {
+          margin-right: 0px;
+          width: 160px;
+          height: 25px;
+        }
+
+        :last-child {
+          width: 250px;
+          height: 22px;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     margin-top: 5rem;
 

@@ -33,12 +33,12 @@ export const Box = styled.div`
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-evenly;
-    height: 20rem;
     margin-top: 0;
 
     > div {
       max-width: none;
       width: 100%;
+      height: 200px;
       display: flex;
       justify-content: space-evenly;
       flex-direction: row;
@@ -321,8 +321,8 @@ export const Order = styled.div`
 
   @media screen and (min-width: 1024px) {
     > div {
-      width: 565px;
-      margin-top: 10rem;
+      /* width: 565px; */
+      margin-top: -7rem;
       background-color: #00000000;
 
       h1 {
@@ -416,6 +416,42 @@ export const MainTech = styled.div`
     height: 250px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1400px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+
+    > div {
+      height: 500px;
+      width: 590px;
+      margin-top: 4rem;
+
+      > div {
+        width: 270px;
+
+        h3 {
+          text-align: left;
+          text-decoration: underline #3ccefe;
+          text-underline-offset: 7px;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: left;
+          white-space: initial;
+        }
+      }
+    }
+
+    img {
+      width: 250px;
+      height: 229px;
+      margin: none;
+    }
   }
 
   @media screen and (min-width: 1440px) {

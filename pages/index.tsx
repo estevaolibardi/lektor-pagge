@@ -84,10 +84,9 @@ export default function Home() {
         </svg> */}
         <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
             d="M-24 194.966L57.125 182.962C138.25 170.958 300.5 146.951 462.75 110.939C625 74.9278 787.25 26.9126 949.5 8.90694C1111.75 -9.09875 1274 2.90504 1436.25 20.9107C1598.5 38.9164 1760.75 62.924 1841.87 74.9278L1923 86.9316V303H1841.87C1760.75 303 1598.5 303 1436.25 303C1274 303 1111.75 303 949.5 303C787.25 303 625 303 462.75 303C300.5 303 138.25 303 57.125 303H-24V194.966Z"
             fill="#064067"
+            fillOpacity="1"
           />
         </svg>
 
@@ -132,7 +131,7 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="700"
                 src="/motor.png"
                 alt="eletric-motor"
