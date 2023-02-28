@@ -39,21 +39,56 @@ export const TrustBy = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    margin-top: 5rem;
-
     div {
       width: 825px;
+      height: 50px;
 
       img {
+        width: 90px;
+        height: 25px;
+
         :nth-child(2) {
           margin-right: 0px;
-          width: 160px;
-          height: 25px;
+          width: 120px;
+          height: 20px;
+        }
+
+        :nth-child(3) {
+          width: 100px;
+          height: 20px;
         }
 
         :last-child {
-          width: 250px;
-          height: 22px;
+          width: 200px;
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    div {
+      width: 825px;
+      height: 100px;
+
+      img {
+        width: 90px;
+        height: 25px;
+
+        :nth-child(2) {
+          margin-right: 0px;
+          width: 120px;
+          height: 20px;
+        }
+
+        :nth-child(3) {
+          width: 100px;
+          height: 20px;
+        }
+
+        :last-child {
+          width: 200px;
+          height: 18px;
         }
       }
     }
@@ -66,10 +101,18 @@ export const TrustBy = styled.div`
       width: 1000px;
 
       img {
+        width: 138px;
+        height: 30px;
+
         :nth-child(2) {
           margin-right: 0px;
           width: 160px;
           height: 25px;
+        }
+
+        :nth-child(3) {
+          width: 150px;
+          height: 28px;
         }
 
         :last-child {
@@ -139,19 +182,32 @@ export const Container = styled.header`
   }
 
   @media screen and (min-width: 1024px) {
-    background-size: 100%;
+    height: 570px;
     background-position: 53% 50%;
 
     svg {
-      top: 36rem;
+      top: 27rem;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    height: 620px;
+    background-position: 53% 50%;
+    background-size: 100%;
+
+    svg {
+      top: 27rem;
     }
   }
 
   @media screen and (min-width: 1440px) {
     height: 825px;
-    background-size: 100%;
     background-position: 0% 58%;
     background-size: 1900px;
+
+    svg {
+      top: 36rem;
+    }
   }
 `;
 
@@ -199,7 +255,34 @@ export const SectionContainer = styled.div`
       padding: 0;
       display: flex;
       flex-direction: column;
-      max-width: 794px;
+      max-width: 890px;
+      margin-top: 5rem;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        width: 500px;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+
+      button {
+        width: 175px;
+      }
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      max-width: 1025px;
+      margin-top: 5rem;
 
       h1 {
         font-size: 1.8rem;
@@ -224,7 +307,8 @@ export const SectionContainer = styled.div`
       padding: 0;
       display: flex;
       flex-direction: column;
-      max-width: 1200px;
+      max-width: 1400px;
+      justify-content: flex-start;
 
       h1 {
         font-size: 2.8rem;
@@ -242,12 +326,6 @@ export const SectionContainer = styled.div`
         font-size: 1.4rem;
       }
     }
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 1400px;
-    justify-content: flex-start;
-    margin-top: 4rem;
   }
 `;
 
@@ -283,7 +361,7 @@ export const NavbarContainer = styled.div`
 
   @media screen and (min-width: 1024px) {
     padding: 0;
-    max-width: 888px;
+    max-width: 890px;
   }
 
   @media screen and (min-width: 1200px) {
