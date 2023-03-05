@@ -241,6 +241,39 @@ export const Info = styled.div`
     }
   }
 
+  @media screen and (min-width: 1366px) {
+    width: 1025px;
+    height: 240px;
+    flex-direction: row;
+
+    > div {
+      :first-child {
+        width: 290px;
+      }
+
+      :nth-child(2) {
+        width: 520px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 0.4rem;
+      }
+
+      > p {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+
+        :last-child {
+          font-size: 1rem;
+          width: 100%;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     width: 1400px;
     height: 200px;
