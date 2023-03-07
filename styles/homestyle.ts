@@ -233,8 +233,10 @@ export const Second = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
+    height: 12rem;
+
     svg {
-      width: 45px;
+      width: 40px;
     }
 
     h1 {

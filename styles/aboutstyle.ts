@@ -29,6 +29,7 @@ export const Container = styled.header`
   }
 
   @media screen and (min-width: 1440px) {
+    height: 530px;
     background-size: 100%;
     background-position: 0% 58%;
     background-size: 1900px;
@@ -252,33 +253,28 @@ export const Title = styled.div`
     margin-top: 0;
     width: 1400px;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 3rem;
 
     > div {
       h1 {
-        width: 700px;
+        width: 750px;
         font-size: 2rem;
         font-weight: 500;
-        letter-spacing: 0.1rem;
       }
 
       > p {
-        font-size: 1.3rem;
-        width: 580px;
+        font-size: 1.2rem;
+        width: 565px;
         font-weight: 400;
         margin-top: 4rem;
         letter-spacing: 0.05rem;
       }
+    }
 
-      :last-child {
-        width: 670px;
-
-        img {
-          margin-top: 0;
-          width: 600px;
-          height: 450px;
-        }
-      }
+    img {
+      margin-top: 12rem;
+      width: 530px;
+      height: 350px;
     }
   }
 `;
@@ -337,9 +333,10 @@ export const Card = styled.div`
           align-items: center;
           width: 315px;
           height: 360px;
-          background-color: #e0eeff4d;
+          background-color: #fff;
           justify-content: center;
-          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+            rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
           h1 {
             font-size: 1.2rem;
@@ -350,6 +347,70 @@ export const Card = styled.div`
           p {
             font-size: 1.1rem;
             width: 270px;
+          }
+
+          :last-child {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1145px;
+    margin-bottom: 5rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 470px;
+      height: 115px;
+      justify-content: space-between;
+      text-align: center;
+      color: #274596;
+
+      > h1 {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 28px;
+        width: 460px;
+        letter-spacing: 3%;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      :last-child {
+        height: 400px;
+        width: 100%;
+        flex-direction: row;
+
+        div {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          width: 350px;
+          height: 360px;
+          justify-content: center;
+
+          h1 {
+            font-size: 1.3rem;
+            margin: 25px 0;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 1.2rem;
+            width: 285px;
           }
 
           :last-child {
@@ -399,6 +460,40 @@ export const Box1 = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
+    width: 1400px;
+    margin-top: 6rem;
+    justify-content: space-around;
+
+    img {
+      width: 500px;
+      height: 420px;
+    }
+
+    div {
+      width: 685px;
+
+      h1 {
+        font-size: 1.6rem;
+        span {
+          --color: #5692ec;
+          --position: 0.1rem 2.3rem;
+          --width: 100%;
+          --height: 8px;
+          background: linear-gradient(to right, var(--color), #5fe3ea)
+            var(--position) / var(--width) var(--height) no-repeat;
+          padding-bottom: 15px;
+        }
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        width: 545px;
+        font-size: 1.2rem;
+      }
+    }
   }
 `;
 
@@ -425,12 +520,42 @@ export const Box2 = styled.div`
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     h2 {
       font-size: 1.3rem;
       font-weight: 500;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 995px;
+    justify-content: space-around;
+
+    img {
+      height: 330px;
+    }
+
+    div {
+      width: 560px;
+
+      ul {
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        width: 490px;
+        font-size: 1.2rem;
+      }
     }
   }
 `;
@@ -440,7 +565,7 @@ export const Box3 = styled.div`
   display: flex;
   justify-content: center;
   color: #274596;
-  gap: 5rem;
+  gap: 2rem;
   margin-bottom: 8rem;
   align-items: center;
 
@@ -466,6 +591,43 @@ export const Box3 = styled.div`
     h2 {
       font-size: 1.3rem;
       font-weight: 500;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1400px;
+    justify-content: end;
+    margin-top: 1rem;
+
+    img {
+      width: 250px;
+      height: 200px;
+    }
+
+    > div {
+      flex-direction: center;
+      align-items: center;
+
+      :last-child {
+        width: 655px;
+        display: flex;
+        align-self: start;
+        margin-right: 5rem;
+        align-items: flex-start;
+
+        h1 {
+          font-size: 1.7rem;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        p {
+          width: 545px;
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 `;

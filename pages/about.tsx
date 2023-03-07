@@ -110,11 +110,13 @@ export default function About({
             src="/ais.jpg"
             alt="factory_isometric"
             priority
-            width={400}
-            height={400}
+            width={500}
+            height={500}
           />
           <div>
-            <h1>Sensor de Vibração e Temperatura</h1>
+            <h1>
+              <span>Sensor de Vibração e Temperatura</span>
+            </h1>
             <h2>Inteligência Artificial</h2>
             <p>
               Nosso sistema de IA, Lógica Fuzzy e reconhecimento de padrões, tem
@@ -141,19 +143,22 @@ export default function About({
             src="/ai.png"
             alt="factory_isometric"
             priority
-            width={350}
-            height={250}
+            width={500}
+            height={500}
           />
         </Box2>
 
         <Box3>
-          <Image
-            src="/previsao.png"
-            alt="factory_isometric"
-            priority
-            width={150}
-            height={100}
-          />
+          <div>
+            <Image
+              src="/previsao.png"
+              alt="factory_isometric"
+              priority
+              width={500}
+              height={500}
+            />
+          </div>
+
           <div>
             <h2>Previsibilidade de Falha em Dias</h2>
             <p>
@@ -171,7 +176,9 @@ export default function About({
 
         <Card>
           <div>
-            <h1>Nossos sensores para a Indústria 4.0</h1>
+            <h1>
+              <span>Nossos sensores para a Indústria 4.0</span>
+            </h1>
             <p>
               Evite que os desvios de manutenção e operação se tornem um
               problema e uma dor de cabeça!
