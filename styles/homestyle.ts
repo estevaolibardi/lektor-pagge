@@ -338,16 +338,6 @@ export const Order = styled.div`
     white-space: break-spaces;
     background-color: #064067;
 
-    /* span {
-      --color: #fff;
-      --position: 0.1rem 3rem;
-      --width: 150px;
-      --height: 9px;
-      background: linear-gradient(var(--color), var(--color)) var(--position) /
-        var(--width) var(--height) no-repeat;
-      padding-bottom: 15px;
-    } */
-
     h1 {
       font-size: 1.5rem;
       color: #fff;
@@ -508,6 +498,39 @@ export const MainTech = styled.div`
           text-decoration: underline #3ccefe;
           text-underline-offset: 7px;
           margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: left;
+          white-space: initial;
+        }
+      }
+    }
+
+    img {
+      width: 250px;
+      height: 229px;
+      margin: none;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 1400px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+
+    > div {
+      height: 500px;
+      width: 590px;
+      margin-top: 4rem;
+
+      > div {
+        width: 270px;
+
+        h3 {
+          font-size: 1.2rem;
         }
 
         p {

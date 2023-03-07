@@ -458,7 +458,7 @@ export const Box1 = styled.div`
 
       h1 {
         font-size: 1.5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
         font-weight: 500;
         span {
           --color: #5692ec;

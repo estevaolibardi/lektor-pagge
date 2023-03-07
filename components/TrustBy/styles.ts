@@ -32,6 +32,7 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   div {
     width: 390px;
@@ -67,6 +68,42 @@ export const Box = styled.div`
       :last-child {
         width: 120px;
         height: 40px;
+      }
+    }
+  }
+  @media screen and (min-width: 1366px) {
+    width: 100%;
+    div {
+      width: 100%;
+      gap: 30px;
+
+      img {
+        :first-child {
+          height: 40px;
+          width: 175px;
+          margin-left: 1rem;
+        }
+
+        :nth-child(2) {
+          width: 170px;
+          height: 40px;
+        }
+
+        :nth-child(3) {
+          width: 150px;
+          height: 30px;
+          margin-left: 2rem;
+        }
+
+        :nth-child(4) {
+          width: 170px;
+          height: 45px;
+        }
+
+        :last-child {
+          width: 120px;
+          height: 40px;
+        }
       }
     }
   }

@@ -34,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
     width: 350px;
     height: 100%;
 
+    @media screen and (min-width: 1366px) {
+    width: 1025px;
+   
+    }
+
     @media screen and (min-width: 1440px) {
     width: 1440px;
     height: 100%;
@@ -47,6 +52,10 @@ const GlobalStyle = createGlobalStyle`
   background: #ffff;
   width: 300px;
   height: 230px;
+
+  @media screen and (min-width: 1366px) {
+    height: 150px;
+  }
 
   /* Center slide text vertically */
   display: -webkit-box;
