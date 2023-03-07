@@ -312,6 +312,15 @@ export const Card = styled.div`
       > h1 {
         font-size: 1.5rem;
         font-weight: 500;
+        span {
+          --color: #58cfc9;
+          --position: 0.1rem 2.3rem;
+          --width: 100%;
+          --height: 8px;
+          background: linear-gradient(var(--color), var(--color))
+            var(--position) / var(--width) var(--height) no-repeat;
+          padding-bottom: 15px;
+        }
       }
 
       p {
@@ -366,7 +375,7 @@ export const Card = styled.div`
       flex-direction: column;
       align-items: center;
       width: 470px;
-      height: 115px;
+      height: 140px;
       justify-content: space-between;
       text-align: center;
       color: #274596;
@@ -506,7 +515,7 @@ export const Box2 = styled.div`
 
   img {
     width: 350px;
-    height: 250px;
+    height: 280px;
   }
 
   div {
@@ -561,7 +570,6 @@ export const Box2 = styled.div`
 `;
 
 export const Box3 = styled.div`
-  width: 1025px;
   display: flex;
   justify-content: center;
   color: #274596;
@@ -575,22 +583,50 @@ export const Box3 = styled.div`
   }
 
   div {
-    width: 480px;
     display: flex;
     flex-direction: column;
+  }
 
-    p {
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
+  @media screen and (min-width: 1366px) {
+    width: 1025px;
+    justify-content: end;
+    margin-top: 1rem;
+
+    img {
+      width: 250px;
+      height: 200px;
     }
 
-    ul {
-      padding: 1rem;
-    }
+    > div {
+      flex-direction: center;
+      align-items: center;
+      width: 390px;
 
-    h2 {
-      font-size: 1.3rem;
-      font-weight: 500;
+      :last-child {
+        width: 480px;
+        display: flex;
+        align-self: start;
+        margin-right: 2rem;
+        align-items: flex-start;
+
+        h1 {
+          font-size: 1.7rem;
+        }
+
+        p {
+          margin-bottom: 2rem;
+          font-size: 1.1rem;
+        }
+
+        ul {
+          padding: 1rem;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+      }
     }
   }
 

@@ -275,7 +275,7 @@ export const Info = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 1400px;
+    width: 1145px;
     height: 200px;
     flex-direction: row;
 
