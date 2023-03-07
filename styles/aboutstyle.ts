@@ -222,7 +222,7 @@ export const Title = styled.div`
       justify-content: space-between;
 
       h1 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         span {
           --color: #61e3eb;
           --position: 0.1rem 2.8rem;
@@ -242,8 +242,8 @@ export const Title = styled.div`
 
     img {
       margin-top: 4rem;
-      width: 500px;
-      height: 308px;
+      width: 450px;
+      height: 310px;
       position: absolute;
       left: 50%;
     }
@@ -304,7 +304,7 @@ export const Card = styled.div`
       flex-direction: column;
       align-items: center;
       width: 470px;
-      height: 115px;
+      height: 135px;
       justify-content: space-between;
       text-align: center;
       color: #274596;
@@ -314,7 +314,7 @@ export const Card = styled.div`
         font-weight: 500;
         span {
           --color: #58cfc9;
-          --position: 0.1rem 2.3rem;
+          --position: 0.1rem 2.2rem;
           --width: 100%;
           --height: 8px;
           background: linear-gradient(var(--color), var(--color))
@@ -325,7 +325,7 @@ export const Card = styled.div`
 
       p {
         font-size: 1.1rem;
-        line-height: 28px;
+        line-height: 22px;
         width: 436px;
         letter-spacing: 3%;
       }
@@ -440,6 +440,7 @@ export const Box1 = styled.div`
   margin-bottom: 2rem;
 
   @media screen and (min-width: 1366px) {
+    margin-top: 6rem;
     img {
       width: 450px;
       height: 380px;
@@ -459,6 +460,15 @@ export const Box1 = styled.div`
         font-size: 1.5rem;
         margin-bottom: 5rem;
         font-weight: 500;
+        span {
+          --color: #5692ec;
+          --position: 0.1rem 2.3rem;
+          --width: 100%;
+          --height: 8px;
+          background: linear-gradient(to right, var(--color), #5fe3ea)
+            var(--position) / var(--width) var(--height) no-repeat;
+          padding-bottom: 15px;
+        }
       }
 
       h2 {
@@ -508,6 +518,7 @@ export const Box1 = styled.div`
 
 export const Box2 = styled.div`
   width: 1025px;
+  margin-right: 10rem;
   display: flex;
   justify-content: end;
   color: #274596;
@@ -530,6 +541,7 @@ export const Box2 = styled.div`
 
     p {
       font-size: 1.2rem;
+      width: 390px;
     }
 
     h2 {
@@ -591,10 +603,11 @@ export const Box3 = styled.div`
     width: 1025px;
     justify-content: end;
     margin-top: 1rem;
+    gap: 4rem;
 
     img {
-      width: 250px;
-      height: 200px;
+      width: 210px;
+      height: 180px;
     }
 
     > div {
