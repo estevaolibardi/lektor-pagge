@@ -437,7 +437,6 @@ export const Box1 = styled.div`
   margin-top: 8rem;
   justify-content: space-around;
   color: #274596;
-  margin-bottom: 2rem;
 
   @media screen and (min-width: 1366px) {
     margin-top: 6rem;
@@ -489,7 +488,7 @@ export const Box1 = styled.div`
     }
 
     div {
-      width: 685px;
+      width: 615px;
 
       h1 {
         font-size: 1.6rem;
@@ -509,7 +508,7 @@ export const Box1 = styled.div`
       }
 
       p {
-        width: 545px;
+        width: 520px;
         font-size: 1.2rem;
       }
     }
@@ -518,64 +517,87 @@ export const Box1 = styled.div`
 
 export const Box2 = styled.div`
   width: 1025px;
-  margin-right: 10rem;
   display: flex;
+  flex-direction: column;
   justify-content: end;
   color: #274596;
   margin-bottom: 2rem;
 
-  img {
-    width: 350px;
-    height: 280px;
-  }
-
-  div {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-
-    ul {
-      padding: 1rem;
-      font-size: 1.1rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      width: 390px;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-  }
-
   @media screen and (min-width: 1440px) {
-    width: 995px;
-    justify-content: space-around;
-
-    img {
-      height: 330px;
-    }
+    width: 500px;
+    justify-content: start;
 
     div {
-      width: 560px;
-
-      ul {
-        font-size: 1.2rem;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-
-      h2 {
-        font-size: 1.4rem;
-      }
-
       p {
-        width: 490px;
+        width: 465px;
         font-size: 1.2rem;
+      }
+
+      :nth-child(2) {
+        width: 320px;
+        height: 200px;
+        margin-top: 3rem;
+        border-radius: 20px;
+        justify-content: space-evenly;
+        display: flex;
+        box-shadow: 0px 4px 5px 3px rgba(185, 220, 253, 1);
+
+        > div {
+          box-shadow: none;
+          width: 160px;
+          margin-top: 0;
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+
+          h3 {
+            margin-top: 0;
+          }
+
+          :last-child {
+            width: 100px;
+            flex-direction: column;
+            text-align: end;
+
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      :nth-child(3) {
+        img {
+          height: 280px;
+          width: 280px;
+          margin-left: 4rem;
+          margin-top: 5rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      :nth-child(4) {
+        ul {
+          padding: 1.4rem;
+          width: 460px;
+          font-size: 1.1rem;
+        }
+
+        p {
+          width: 420px;
+        }
+      }
+
+      :last-child {
+        img {
+          :last-child {
+            width: 220px;
+            height: 150px;
+            margin-left: 6rem;
+            margin-bottom: 0;
+            margin-top: 4rem;
+          }
+        }
       }
     }
   }
@@ -583,11 +605,11 @@ export const Box2 = styled.div`
 
 export const Box3 = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   color: #274596;
-  gap: 2rem;
   margin-bottom: 8rem;
-  align-items: center;
+  align-items: start;
 
   img {
     width: 180px;
@@ -599,11 +621,9 @@ export const Box3 = styled.div`
     flex-direction: column;
   }
 
-  @media screen and (min-width: 1366px) {
+  /* @media screen and (min-width: 1366px) {
     width: 1025px;
     justify-content: end;
-    margin-top: 1rem;
-    gap: 4rem;
 
     img {
       width: 210px;
@@ -631,33 +651,31 @@ export const Box3 = styled.div`
           font-size: 1.1rem;
         }
 
-        ul {
-          padding: 1rem;
-        }
-
         h2 {
           font-size: 1.3rem;
           font-weight: 500;
         }
       }
     }
-  }
+  } */
 
   @media screen and (min-width: 1440px) {
-    width: 1400px;
-    justify-content: end;
-    margin-top: 1rem;
+    width: 465px;
+    justify-content: start;
 
     img {
-      width: 250px;
-      height: 200px;
+      width: 330px;
+      height: 280px;
+      margin-top: -3rem;
+      margin-bottom: 1rem;
+      margin-left: 3rem;
     }
 
     > div {
       flex-direction: center;
       align-items: center;
 
-      :last-child {
+      :nth-child(2) {
         width: 655px;
         display: flex;
         align-self: start;
@@ -670,13 +688,106 @@ export const Box3 = styled.div`
 
         h2 {
           font-size: 1.4rem;
+          font-weight: 500;
         }
 
         p {
-          width: 545px;
+          width: 490px;
           font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      :nth-child(3) {
+        width: 375px;
+        height: 240px;
+        align-items: start;
+        margin-top: 1rem;
+        margin-right: 0;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 2px 3px 5px 3px rgb(185 220 253);
+
+        h3 {
+          width: 375px;
+          font-weight: 500;
+          text-align: start;
+          margin-left: 1rem;
+          margin-top: 1rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          font-size: 1.1rem;
+        }
+
+        div {
+          flex-direction: row;
+          justify-content: center;
+          width: 100%;
+          div {
+            flex-direction: column;
+            width: 185px;
+
+            :last-child {
+              width: 150px;
+              text-align: end;
+            }
+          }
+        }
+      }
+
+      :nth-child(4) {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        img {
+          width: 250px;
+          height: 250px;
+          margin-top: 4rem;
+          margin-bottom: 0;
+          margin-left: 3rem;
+        }
+
+        p {
+          width: 400px;
+          font-size: 1.1rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          text-align: start;
+        }
+      }
+
+      :last-child {
+        width: 100%;
+
+        h2 {
+          width: 100%;
+          text-align: start;
+        }
+
+        ul {
+          padding: 0 1.4rem;
+          line-height: 1.6rem;
+          margin: 0;
+          width: 100%;
+          font-size: 1.1rem;
         }
       }
     }
   }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  width: 1400px;
+  justify-content: center;
+`;
+
+export const Info = styled.div`
+  display: flex;
+  width: 400px;
+  justify-content: center;
 `;

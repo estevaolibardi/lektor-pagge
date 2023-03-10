@@ -19,6 +19,8 @@ import {
   Box2,
   Box3,
   Card,
+  Wrapper,
+  Info,
 } from '../styles/aboutstyle';
 
 interface NavProps {
@@ -125,54 +127,146 @@ export default function About({
             </p>
           </div>
         </Box1>
-        <Box2>
-          <div>
-            <h2>Modo de Falha</h2>
-            <p>
-              Através do modo de falha, tenha a probabilidade das principais
-              causas que estão gerando falhas em suas máquinas:
-            </p>
-            <ul>
-              <li>Folga Mecânica</li>
-              <li>Roçamento</li>
-              <li>Lubrificação</li>
-              <li>Desalinhamento</li>
-            </ul>
-          </div>
-          <Image
-            src="/ai.png"
-            alt="factory_isometric"
-            priority
-            width={500}
-            height={500}
-          />
-        </Box2>
+        <Wrapper>
+          <Box2>
+            <div>
+              <h2>Modo de Falha</h2>
+              <p>
+                Através do modo de falha, determine no sinal medido, a
+                composição dos harmônicos referentes às principais anomalias, e
+                tenha a provável causa de falha em sua máquina!
+              </p>
+            </div>
 
-        <Box3>
-          <div>
-            <Image
-              src="/previsao.png"
-              alt="factory_isometric"
-              priority
-              width={500}
-              height={500}
-            />
-          </div>
+            <div>
+              <div>
+                <h3>Prognóstico</h3>
+                <p>Folga Mêcanica</p>
+                <p>Desalinhamento</p>
+                <p>Engrenagem</p>
+              </div>
+              <div>
+                <h3>Impacto</h3>
+                <p>71,096%</p>
+                <p>16,589%</p>
+                <p>05,925%</p>
+              </div>
+            </div>
 
-          <div>
-            <h2>Previsibilidade de Falha em Dias</h2>
-            <p>
-              Entenda de forma simples a gravidade que as consequências das
-              falhas estão gerando em suas máquinas em DIAS até ela quebrar,
-              caso não seja feita nenhuma manutenção.
-            </p>
-            <p>
-              Se o problema realmente for resolvido, a previsão em dias irá
-              aumentar, indicando que a máquina já esta operando em condições
-              nominais!
-            </p>
-          </div>
-        </Box3>
+            <div>
+              <Image
+                src="/data.png"
+                alt="data"
+                priority
+                width={325}
+                height={359}
+              />
+            </div>
+
+            <div>
+              <h2>Benefícios para o Cliente</h2>
+              <p>
+                Através do modo de falha, determine no sinal medido, a
+                composição dos harmônicos referentes às principais anomalias.
+              </p>
+              <ul>
+                <li>Geração de Ordem de Serviço automática;</li>
+                <li>Melhor controle e planejamento da manutenção;</li>
+                <li>Melhor planejamento de compras</li>
+                <li>Redução de estoque de peças</li>
+                <li>Redução de custos de manutenção</li>
+                <li>Redução de paradas não programadas</li>
+                <li>
+                  Intervenção somente quando necessária, evitando perdas por
+                  paradas inesperadas.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <Image
+                src="/previsao.png"
+                alt="data"
+                priority
+                width={500}
+                height={500}
+              />
+            </div>
+          </Box2>
+
+          <Box3>
+            <div>
+              <Image
+                src="/ai.png"
+                alt="factory_isometric"
+                priority
+                width={500}
+                height={500}
+              />
+            </div>
+
+            <div>
+              <h2>Previsibilidade de Falha em Dias</h2>
+              <p>
+                Entenda de forma simples a gravidade que as consequências das
+                falhas estão gerando em suas máquinas em DIAS até ela quebrar,
+                caso não seja feita nenhuma manutenção.
+              </p>
+              <p>
+                Se o problema realmente for resolvido, a previsão em dias irá
+                aumentar, indicando que a máquina já esta operando em condições
+                nominais!
+              </p>
+            </div>
+
+            <div>
+              <h3>Previsibilidade de Falha</h3>
+              <div>
+                <div>
+                  <p>Condição Nominal</p>
+                  <p>Inspeção</p>
+                  <p>Alerta</p>
+                  <p>Manutenção</p>
+                </div>
+                <div>
+                  <p>121 a 365 dias</p>
+                  <p>61 a 120 dias</p>
+                  <p>31 a 60 dias</p>
+                  <p>Período &lt; 30 dias</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <Image
+                src="/contadu.png"
+                alt="data"
+                priority
+                width={500}
+                height={500}
+              />
+              <p>
+                A cada alarme gerado o sistema envia automaticamente um e-mail
+                para qualquer funcionário, avisando o horário que a anomalia foi
+                detectada!
+              </p>
+            </div>
+
+            <div>
+              <h2>Diferenciais</h2>
+              <ul>
+                <li>Sensores Digitais;</li>
+                <li>Monitoramento em tempo real;</li>
+                <li>Alta taxa de leitura (340.000/mês);</li>
+                <li>Coleta de dados automática;</li>
+                <li>Faixa completa de harmônicas avaliadas;</li>
+                <li>Análise de dados com AI;</li>
+                <li>Previsibilidade de falha em dias;</li>
+                <li>Medição contínua de FFT;</li>
+              </ul>
+            </div>
+          </Box3>
+        </Wrapper>
 
         <Card>
           <div>
