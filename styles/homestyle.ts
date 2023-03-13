@@ -259,7 +259,7 @@ export const Title = styled.div`
       }
 
       p {
-        width: 468px;
+        width: 515px;
         font-size: 1.2rem;
         margin: 1rem 0rem;
       }
@@ -267,10 +267,10 @@ export const Title = styled.div`
 
     img {
       margin-top: 2rem;
-      width: 450px;
-      height: 310px;
+      width: 400px;
+      height: 300px;
       position: absolute;
-      left: 55%;
+      left: 58%;
     }
   }
 
@@ -432,7 +432,7 @@ export const Card = styled.div`
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          width: 315px;
+          width: 290px;
           height: 360px;
           background-color: #fff;
           justify-content: center;
@@ -577,14 +577,14 @@ export const Box1 = styled.div`
     padding: 0;
 
     img {
-      width: 450px;
-      height: 380px;
+      width: 380px;
+      height: 350px;
     }
 
     div {
       display: flex;
       flex-direction: column;
-      width: 460px;
+      width: 425px;
       justify-content: flex-end;
       text-align: start;
       align-items: flex-start;
@@ -746,7 +746,7 @@ export const Box2 = styled.div`
 
   @media screen and (min-width: 1366px) {
     padding: 0;
-    max-width: 400px;
+    max-width: 370px;
     justify-content: flex-start;
 
     div {
@@ -761,7 +761,7 @@ export const Box2 = styled.div`
       }
 
       :nth-child(2) {
-        max-width: 320px;
+        max-width: 290px;
 
         > div {
           > p {
@@ -769,11 +769,16 @@ export const Box2 = styled.div`
         }
 
         :last-child {
+          p {
+            text-align: end;
+          }
         }
       }
 
       :nth-child(3) {
         img {
+          width: 250px;
+          height: 250px;
         }
       }
 
@@ -986,9 +991,11 @@ export const Box3 = styled.div`
 
   @media screen and (min-width: 1366px) {
     padding: 0;
-    max-width: 430px;
+    max-width: 385px;
 
     img {
+      width: 260px;
+      height: 240px;
     }
 
     > div {
@@ -1015,17 +1022,19 @@ export const Box3 = styled.div`
       }
 
       :nth-child(3) {
-        max-width: 375px;
+        max-width: 345px;
 
         h3 {
-          padding: 0 1.5rem;
+          padding: 0 1rem;
         }
 
         p {
           font-size: 1.1rem;
+          margin-bottom: 1rem;
         }
 
         div {
+          margin-bottom: 0rem;
           justify-content: space-evenly;
 
           div {
@@ -1041,7 +1050,7 @@ export const Box3 = styled.div`
 
         p {
           font-size: 1.1rem;
-          width: 90%;
+          width: 100%;
           text-align: start;
         }
       }
@@ -1188,13 +1197,8 @@ export const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  img {
-    width: 300px;
-    height: 300px;
-  }
-
   @media screen and (min-width: 1366px) {
-    max-width: 1025px;
+    max-width: 980px;
     flex-direction: row;
     justify-content: space-around;
   }
